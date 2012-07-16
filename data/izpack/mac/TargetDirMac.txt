@@ -1,0 +1,1 @@
+/Applications/CLIENT_NAME.app

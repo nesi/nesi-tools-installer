@@ -1,0 +1,60 @@
+<shortcuts>
+  <skipIfNotSupported/>
+  <programGroup defaultName="NeSI"
+                location="applications"/>
+  <shortcut
+    name="MobaXTerm"
+    target="$INSTALL_PATH\bin\mobaXterm.vbs"
+    commandLine=""
+    workingDirectory="$INSTALL_PATH\bin\"
+    description="This starts an instance of MobaXTerm"
+    iconFile="$INSTALL_PATH\resources\mobaxterm.ico"
+    iconIndex="0"
+    initialState="normal"
+    programGroup="yes"
+    desktop="yes"
+    applications="yes"
+    startMenu="no"
+    startup="no">
+
+    <createForPack name="NeSI tools"/>
+  </shortcut>
+  
+  <shortcut
+    name="Grisu Template Client"
+    target="$INSTALL_PATH\bin\grisu-template.vbs"
+    commandLine=""
+    workingDirectory="$INSTALL_PATH\bin\"
+    description="This starts an instance of the Grisu Template Client"
+    iconFile="$INSTALL_PATH\resources\grisu.ico"
+    iconIndex="0"
+    initialState="normal"
+    programGroup="yes"
+    desktop="yes"
+    applications="yes"
+    startMenu="no"
+    startup="no">
+
+    <createForPack name="NeSI tools"/>
+  </shortcut>  
+  
+  
+<shortcut
+     name="Uninstall Nesi tools"
+     programGroup="yes"
+     desktop="no"
+     applications="yes"
+     startMenu="no"
+     startup="no"
+     target="$INSTALL_PATH\resources\uninstall.vbs"
+     workingDirectory="$INSTALL_PATH\resources\"
+     commandLine=""
+     initialState="normal"
+     iconFile="$INSTALL_PATH\resources\uninstall.ico"
+     iconIndex="0"
+     description="NeSI tools uninstaller">
+     <createForPack name="NeSI tools" />
+   </shortcut>  
+  
+  
+</shortcuts>

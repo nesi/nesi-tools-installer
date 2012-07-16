@@ -1,0 +1,50 @@
+<shortcuts>
+  <skipIfNotSupported/>
+  <programGroup defaultName="Grid"
+                location="applications"/>
+                
+   <shortcut
+     name="CLIENT_NAME"
+     programGroup="yes"
+     desktop="yes"
+     applications="no"
+     startMenu="no"
+     startup="no"
+     target="$INSTALL_PATH/bin/LINUX_START_SCRIPT"
+     commandLine=""
+     description="This starts an instance of the CLIENT_NAME"
+     workingDirectory="$INSTALL_PATH/bin"
+	 iconFile="$INSTALL_PATH/resources/icon.png"
+     iconIndex="0"
+     type="Application"
+     encoding="UTF-8"
+     terminal="USE_TERMINAL"
+     KdeSubstUID="false"
+     initialState="normal">
+     <createForPack name="CLIENT_NAME"/>
+   </shortcut>
+
+  
+   <shortcut
+     name="Uninstall CLIENT_NAME"
+     programGroup="yes"
+     desktop="no"
+     applications="no"
+     startMenu="no"
+     startup="no"
+     target="$INSTALL_PATH/launch/uninstall.sh"
+     commandLine=""
+     description="Uninstall the CLIENT_NAME"
+     workingDirectory="$INSTALL_PATH/launch"
+	 iconFile="$INSTALL_PATH/resources/uninstall.png"
+     iconIndex="0"
+     type="Application"
+     encoding="UTF-8"
+     terminal="false"
+     KdeSubstUID="false"
+     initialState="normal">
+     <createForPack name="CLIENT_NAME"/>
+   </shortcut>
+  
+  
+</shortcuts>

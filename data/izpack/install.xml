@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<installation version="1.0">
+	<info>
+		<appname>NeSI</appname>
+		<appversion>0.1</appversion>
+		<url>http://nesi.org.nz</url>
+		<authors>
+			<author name="Markus Binsteiner" email="m.binsteiner@auckland.ac.nz" />
+		</authors>
+		<javaversion>1.6</javaversion>
+		<run-privileged condition="izpack.windowsinstall|izpack.macinstall" />
+	</info>
+	<guiprefs height="400" resizable="no" width="640">
+		<modifier key="useButtonIcons" value="yes" />
+		<modifier key="useLabelIcons" value="no" />
+		<modifier key="labelGap" value="2" />
+		<modifier key="layoutAnchor" value="NORTHWEST" />
+		<modifier key="useHeadingPanel" value="no" />
+		<modifier key="headingImageOnLeft" value="yes" />
+		<modifier key="headingLineCount" value="1" />
+		<modifier key="headingFontSize" value="1.5" />
+		<modifier key="headingBackgroundColor" value="0x00ffffff" />
+		<modifier key="headingPanelCounter" value="progressbar" />
+		<modifier key="headingPanelCounterPos" value="inNavigationPanel" />
+	</guiprefs>
+	<locale>
+		<langpack iso3="eng" />
+	</locale>
+	<resources>
+<!-- 		<res id="LicencePanel.licence" src="izpack/resources/Licence.txt" /> -->
+<!-- 		<res id="HTMLHelloPanel.info" src="izpack/resources/Readme.html" /> -->
+<!-- 		<res id="IZPackLogo" src="izpack/resources/logo-medium.png" /> -->
+<!-- 		<res id="Installer.image" src="izpack/resources/installer_image.jpg" /> -->
+		<res id="TargetPanel.dir.windows" src="windows/TargetDirWindows.txt" />
+		<res id="TargetPanel.dir.unix" src="linux/TargetDirUnix.txt" />
+		<res id="TargetPanel.dir.macosx" src="mac/TargetDirMac.txt" />
+
+		<res id="shortcutSpec.xml" src="windows/shortcutSpec.xml" />
+		<res id="Unix_shortcutSpec.xml" src="linux/unix_shortcut_spec.xml"/>
+	</resources>
+
+	<native type="izpack" name="ShellLink.dll" >
+		<os family="windows" />
+	</native>
+	<native type="izpack" name="ShellLink_x64.dll">
+    	<os family="windows" />
+	</native>
+	
+
+
+	<variables>
+		<variable name="InstallerFrame.logfilePath" value="Default" />
+		<variable name="WELCOME_TEXT" value="CLIENT_NAME" />
+		<variable name="WELCOME_VERSION" value="VERSION_TOKEN" />
+	</variables>
+
+
+	<panels>
+		<!-- <panel classname="CheckedHelloPanel" id="welcome"/> -->
+<!-- 		<panel classname="HTMLHelloPanel" /> -->
+		<panel classname="TargetPanel" id="install_dir" />
+<!-- 		<panel classname="PacksPanel" id="sdk_pack_select" /> -->
+		<panel classname="InstallPanel" id="install" />
+		<panel classname="ShortcutPanel" id="shortcutpanel"/>
+		<panel classname="SimpleFinishPanel" id="finish" />
+	</panels>
+
+	<packs>
+		<pack name="NeSI tools" required="yes" preselected="yes">
+			<description>Core applications and libraries</description>
+			
+			<file os="windows" src="mobaxterm.exe" targetdir="$INSTALL_PATH/bin"></file>
+			<file os="windows" src="windows/griclish.bat" targetdir="$INSTALL_PATH/bin"></file>
+			<file os="windows" src="windows/grisu-template.bat" targetdir="$INSTALL_PATH/bin"></file>
+			<file os="windows" src="windows/grisu-template.vbs" targetdir="$INSTALL_PATH/bin"></file>
+			<file os="windows" src="windows/mobaXterm.bat" targetdir="$INSTALL_PATH/bin"></file>
+			<file os="windows" src="windows/mobaXterm.vbs" targetdir="$INSTALL_PATH/bin"></file>
+			<file os="windows" src="MobaXterm.ini" targetdir="$INSTALL_PATH/resources"></file>
+			<file os="windows" src="combinedClient-binary.jar" targetdir="$INSTALL_PATH/resources"></file>
+			<file os="windows" src="getdown-client.jar" targetdir="$INSTALL_PATH/resources"></file>
+			<file os="windows" src="getdown.txt" targetdir="$INSTALL_PATH/resources"></file>
+			<file os="windows" src="grisu.png" targetdir="$INSTALL_PATH/resources"></file>
+			<file os="windows" src="mobaxterm.ico" targetdir="$INSTALL_PATH/resources"></file>
+			<file os="windows" src="grisu.ico" targetdir="$INSTALL_PATH/resources"></file>
+			
+			<file os="windows" src="windows/uninstall.bat" targetdir="$INSTALL_PATH/resources"></file>
+			<file os="windows" src="windows/uninstall.vbs" targetdir="$INSTALL_PATH/resources"></file>
+			<file os="windows" src="windows/uninstall.ico" targetdir="$INSTALL_PATH/resources"></file>
+			
+		</pack>
+	</packs>
+</installation>
