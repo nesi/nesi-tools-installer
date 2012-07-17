@@ -44,12 +44,12 @@ if NOT EXIST "%dir%\MobaXterm.ini.auto" (
 	@echo Using Java: !JAVA_EXE!
 	if NOT EXIST "!JAVA_EXE!" (
 
-		ECHO WScript.Echo( "Can't find Java executable." ^& vbCrLf ^& vbCrLf ^& "Please contact support:" ^& vbCrLf ^& vbCrLf ^& "m.binsteiner@auckland.ac.nz" ^)  > usermessage.vbs
-		WSCRIPT.EXE usermessage.vbs
-		DEL usermessage.vbs
+		ECHO WScript.Echo( "Can't find Java executable so can't setup ssh access automatically." ^& vbCrLf ^& vbCrLf ^& "Please contact support:" ^& vbCrLf ^& vbCrLf ^& "m.binsteiner@auckland.ac.nz" ^)  > %TMP%\usermessage.vbs
+		WSCRIPT.EXE %TMP%\usermessage.vbs
+		DEL %TMP%\usermessage.vbs
+	) else (
+		"!JAVA_EXE!" -cp "%grisu_dir%\combinedClient-binary.jar" "grisu.frontend.view.swing.utils.ssh.SshKeyCopyFrame" "..\resources\MobaXterm.ini" "%dir%"
 	)
-
-	"!JAVA_EXE!" -cp "%grisu_dir%\combinedClient-binary.jar" "grisu.frontend.view.swing.utils.ssh.SshKeyCopyFrame" "..\resources\MobaXterm.ini" "%dir%"
 
 )
 

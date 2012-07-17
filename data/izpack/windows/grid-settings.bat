@@ -32,9 +32,9 @@ set JAVA_EXE=!JAVA_HOME!\bin\java.exe
 REM @echo Using Java: !JAVA_EXE!
 if NOT EXIST "!JAVA_EXE!" (
 
-	ECHO WScript.Echo( "Can't find Java executable." ^& vbCrLf ^& vbCrLf ^& "Please contact support:" ^& vbCrLf ^& vbCrLf ^& "m.binsteiner@auckland.ac.nz" ^)  > usermessage.vbs
-	WSCRIPT.EXE usermessage.vbs
-	DEL usermessage.vbs
+	ECHO WScript.Echo( "Can't find Java executable." ^& vbCrLf ^& vbCrLf ^& "Please contact support:" ^& vbCrLf ^& vbCrLf ^& "m.binsteiner@auckland.ac.nz" ^)  > %TMP%\usermessage.vbs
+	WSCRIPT.EXE %TMP%\usermessage.vbs
+	DEL %TMP%\usermessage.vbs
 ) ELSE (
 
 	set X509_USER_PROXY=%USERPROFILE%\.grid\grid.proxy
