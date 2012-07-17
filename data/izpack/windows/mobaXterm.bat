@@ -53,6 +53,6 @@ if NOT EXIST "%dir%\MobaXterm.ini.auto" (
 
 )
 
-%dir%\mobaxterm.exe"
+"%dir%\mobaxterm.exe"
 
 
