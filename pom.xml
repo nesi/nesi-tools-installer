@@ -40,6 +40,8 @@
 	</properties>
 
 	<build>
+	
+		<finalName>nesi-tools-installer</finalName>
 
 		<pluginManagement>
 			<plugins>
@@ -211,6 +213,7 @@
 						</goals>
 						<configuration>
 							<izpackBasedir>${staging.dir}</izpackBasedir>
+							<installerFile>${project.build.directory}/nesi-tools-installer.jar</installerFile>
 						</configuration>
 					</execution>
 				</executions>
