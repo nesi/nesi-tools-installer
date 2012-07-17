@@ -38,6 +38,60 @@
     <createForPack name="NeSI tools"/>
   </shortcut>  
   
+  <shortcut
+    name="Grid-Session Tray monitor"
+    target="$INSTALL_PATH\bin\grid-tray.vbs"
+    commandLine=""
+    workingDirectory="$INSTALL_PATH\bin\"
+    description="This starts an instance of the Grid-Session Tray monitor"
+    iconFile="$INSTALL_PATH\resources\grisu.ico"
+    iconIndex="0"
+    initialState="normal"
+    programGroup="yes"
+    desktop="yes"
+    applications="yes"
+    startMenu="no"
+    startup="no">
+
+    <createForPack name="NeSI tools"/>
+  </shortcut>    
+  
+  <shortcut
+    name="Gricli"
+    target="$INSTALL_PATH\bin\griclish.bat"
+    commandLine=""
+    workingDirectory="$INSTALL_PATH\bin\"
+    description="This starts an instance of the Gricli shell"
+    iconFile="$INSTALL_PATH\resources\grisu.ico"
+    iconIndex="0"
+    initialState="normal"
+    programGroup="yes"
+    desktop="yes"
+    applications="yes"
+    startMenu="no"
+    startup="no">
+
+    <createForPack name="NeSI tools"/>
+  </shortcut>    
+  
+  <shortcut
+    name="Settings"
+    target="$INSTALL_PATH\bin\grid-settings.vbs"
+    commandLine=""
+    workingDirectory="$INSTALL_PATH\bin\"
+    description="Setup helper application"
+    iconFile="$INSTALL_PATH\resources\grisu.ico"
+    iconIndex="0"
+    initialState="normal"
+    programGroup="yes"
+    desktop="yes"
+    applications="yes"
+    startMenu="no"
+    startup="no">
+
+    <createForPack name="NeSI tools"/>
+  </shortcut>      
+  
   
 <shortcut
      name="Uninstall Nesi tools"
