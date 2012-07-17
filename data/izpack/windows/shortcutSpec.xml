@@ -13,7 +13,7 @@
     initialState="normal"
     programGroup="yes"
     desktop="yes"
-    applications="yes"
+    applications="no"
     startMenu="no"
     startup="no">
 
@@ -31,7 +31,7 @@
     initialState="normal"
     programGroup="yes"
     desktop="yes"
-    applications="yes"
+    applications="no"
     startMenu="no"
     startup="no">
 
@@ -49,7 +49,7 @@
     initialState="normal"
     programGroup="yes"
     desktop="yes"
-    applications="yes"
+    applications="no"
     startMenu="no"
     startup="no">
 
@@ -67,7 +67,7 @@
     initialState="normal"
     programGroup="yes"
     desktop="yes"
-    applications="yes"
+    applications="no"
     startMenu="no"
     startup="no">
 
@@ -85,7 +85,7 @@
     initialState="normal"
     programGroup="yes"
     desktop="yes"
-    applications="yes"
+    applications="no"
     startMenu="no"
     startup="no">
 
@@ -97,7 +97,7 @@
      name="Uninstall Nesi tools"
      programGroup="yes"
      desktop="no"
-     applications="yes"
+     applications="no"
      startMenu="no"
      startup="no"
      target="$INSTALL_PATH\resources\uninstall.vbs"
