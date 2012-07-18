@@ -161,6 +161,24 @@
 			<file os="macosx" src="mac/grisu-template/grisu-template-wrapper.sh" targetdir="$INSTALL_PATH/Grisu Template.app/Contents/MacOS"></file>
 			<executable os="macosx" targetfile="$INSTALL_PATH/Grisu Template.app/Contents/MacOS/grisu-template-wrapper.sh" keep="true" stage="never">
 			</executable>	
+			
+			<file os="macosx" src="mac/grid-tray/Info.plist" targetdir="$INSTALL_PATH/Grid-Tray.app/Contents"></file>
+			<file os="macosx" src="mac/grid-tray/icon.icns" targetdir="$INSTALL_PATH/Grid-Tray.app/Contents/Resources"></file>
+			<file os="macosx" src="mac/grid-tray/grid-tray" targetdir="/usr/bin"></file>
+			<executable os="macosx" targetfile="/usr/bin/grid-tray" keep="true" stage="never">
+			</executable>			
+			<file os="macosx" src="mac/grid-tray/grid-tray-wrapper.sh" targetdir="$INSTALL_PATH/Grid-Tray.app/Contents/MacOS"></file>
+			<executable os="macosx" targetfile="$INSTALL_PATH/Grid-Tray.app/Contents/MacOS/grid-tray-wrapper.sh" keep="true" stage="never">
+			</executable>		
+			
+			<file os="macosx" src="mac/nesi-setup/Info.plist" targetdir="$INSTALL_PATH/NeSI-Setup.app/Contents"></file>
+			<file os="macosx" src="mac/nesi-setup/icon.icns" targetdir="$INSTALL_PATH/NeSI-Setup.app/Contents/Resources"></file>
+			<file os="macosx" src="mac/nesi-setup/nesi-setup" targetdir="/usr/bin"></file>
+			<executable os="macosx" targetfile="/usr/bin/nesi-setup" keep="true" stage="never">
+			</executable>			
+			<file os="macosx" src="mac/nesi-setup/nesi-setup-wrapper.sh" targetdir="$INSTALL_PATH/NeSI-Setup.app/Contents/MacOS"></file>
+			<executable os="macosx" targetfile="$INSTALL_PATH/NeSI-Setup.app/Contents/MacOS/nesi-setup-wrapper.sh" keep="true" stage="never">
+			</executable>			
 
 			<file os="macosx" src="mac/gricli/Info.plist" targetdir="$INSTALL_PATH/Gricli.app/Contents"></file>
 			<file os="macosx" src="mac/gricli/icon.icns" targetdir="$INSTALL_PATH/Gricli.app/Contents/Resources"></file>
