@@ -1,32 +1,116 @@
 <shortcuts>
   <skipIfNotSupported/>
-  <programGroup defaultName="Grid"
+  <programGroup defaultName="NeSI"
                 location="applications"/>
                 
    <shortcut
-     name="CLIENT_NAME"
+     name="Grisu Template Client"
      programGroup="yes"
      desktop="yes"
      applications="no"
      startMenu="no"
      startup="no"
-     target="$INSTALL_PATH/bin/LINUX_START_SCRIPT"
+     target="$INSTALL_PATH/bin/grisu-template"
      commandLine=""
-     description="This starts an instance of the CLIENT_NAME"
+     description="A GUI to submit and manage jobs to the grid."
      workingDirectory="$INSTALL_PATH/bin"
 	 iconFile="$INSTALL_PATH/resources/icon.png"
      iconIndex="0"
      type="Application"
      encoding="UTF-8"
-     terminal="USE_TERMINAL"
+     terminal="false"
      KdeSubstUID="false"
      initialState="normal">
-     <createForPack name="CLIENT_NAME"/>
+     <createForPack name="NeSI tools"/>
    </shortcut>
+   
+   <shortcut
+     name="Grid-Tray"
+     programGroup="yes"
+     desktop="yes"
+     applications="no"
+     startMenu="no"
+     startup="no"
+     target="$INSTALL_PATH/bin/grid-tray"
+     commandLine=""
+     description="A Tray-Client ot manage login state for the grid."
+     workingDirectory="$INSTALL_PATH/bin"
+	 iconFile="$INSTALL_PATH/resources/icon.png"
+     iconIndex="0"
+     type="Application"
+     encoding="UTF-8"
+     terminal="false"
+     KdeSubstUID="false"
+     initialState="normal">
+     <createForPack name="NeSI tools"/>
+   </shortcut>   
+   
+   <shortcut
+     name="Griclish"
+     programGroup="yes"
+     desktop="yes"
+     applications="no"
+     startMenu="no"
+     startup="no"
+     target="$INSTALL_PATH/bin/griclish"
+     commandLine=""
+     description="Commandline client to submit and manage jobs to the grid."
+     workingDirectory="$INSTALL_PATH/bin"
+	 iconFile="$INSTALL_PATH/resources/icon.png"
+     iconIndex="0"
+     type="Application"
+     encoding="UTF-8"
+     terminal="true"
+     KdeSubstUID="false"
+     initialState="normal">
+     <createForPack name="NeSI tools"/>
+   </shortcut>   
+   
+   <shortcut
+     name="Grid-Session"
+     programGroup="yes"
+     desktop="yes"
+     applications="no"
+     startMenu="no"
+     startup="no"
+     target="$INSTALL_PATH/bin/grid-session"
+     commandLine=""
+     description="Commandline client to manage login state for the grid."
+     workingDirectory="$INSTALL_PATH/bin"
+	 iconFile="$INSTALL_PATH/resources/icon.png"
+     iconIndex="0"
+     type="Application"
+     encoding="UTF-8"
+     terminal="true"
+     KdeSubstUID="false"
+     initialState="normal">
+     <createForPack name="NeSI tools"/>
+   </shortcut>      
+   
+   <shortcut
+     name="Grython"
+     programGroup="yes"
+     desktop="yes"
+     applications="no"
+     startMenu="no"
+     startup="no"
+     target="$INSTALL_PATH/bin/grython"
+     commandLine=""
+     description="Jython based interface to submit and manage jobs to the grid."
+     workingDirectory="$INSTALL_PATH/bin"
+	 iconFile="$INSTALL_PATH/resources/icon.png"
+     iconIndex="0"
+     type="Application"
+     encoding="UTF-8"
+     terminal="true"
+     KdeSubstUID="false"
+     initialState="normal">
+     <createForPack name="NeSI tools"/>
+   </shortcut>      
 
   
    <shortcut
-     name="Uninstall CLIENT_NAME"
+     name="Uninstall Nesi Tools"
      programGroup="yes"
      desktop="no"
      applications="no"
@@ -34,7 +118,7 @@
      startup="no"
      target="$INSTALL_PATH/launch/uninstall.sh"
      commandLine=""
-     description="Uninstall the CLIENT_NAME"
+     description="Uninstall NeSI tools"
      workingDirectory="$INSTALL_PATH/launch"
 	 iconFile="$INSTALL_PATH/resources/uninstall.png"
      iconIndex="0"
@@ -43,7 +127,7 @@
      terminal="false"
      KdeSubstUID="false"
      initialState="normal">
-     <createForPack name="CLIENT_NAME"/>
+     <createForPack name="NeSI tools"/>
    </shortcut>
   
   
