@@ -188,6 +188,15 @@
 			<file os="macosx" src="mac/gricli/griclish" targetdir="/usr/bin"></file>
 			<executable os="macosx" targetfile="/usr/bin/griclish" keep="true" stage="never">
 			</executable>			
+			
+			<file os="macosx" src="mac/grython/Info.plist" targetdir="$INSTALL_PATH/Grython.app/Contents"></file>
+			<file os="macosx" src="mac/grython/icon.icns" targetdir="$INSTALL_PATH/Grython.app/Contents/Resources"></file>
+			<file os="macosx" src="mac/grython/grython-wrapper.sh" targetdir="$INSTALL_PATH/Grython.app/Contents/MacOS"></file>
+			<executable os="macosx" targetfile="$INSTALL_PATH/Grython.app/Contents/MacOS/grython-wrapper.sh" keep="true" stage="never">
+			</executable>			
+			<file os="macosx" src="mac/grython/grython" targetdir="/usr/bin"></file>
+			<executable os="macosx" targetfile="/usr/bin/grython" keep="true" stage="never">
+			</executable>					
 
 			<file os="macosx" src="mac/grid-session/Info.plist" targetdir="$INSTALL_PATH/Grid-Session.app/Contents"></file>
 			<file os="macosx" src="mac/grid-session/icon.icns" targetdir="$INSTALL_PATH/Grid-Session.app/Contents/Resources"></file>
