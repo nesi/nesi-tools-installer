@@ -75,11 +75,11 @@
   </shortcut>    
   
   <shortcut
-    name="Settings"
+    name="NeSI Setup"
     target="$INSTALL_PATH\bin\grid-settings.vbs"
     commandLine=""
     workingDirectory="$INSTALL_PATH\bin\"
-    description="Setup helper application"
+    description="Helper application to setup certain aspects of the NeSI environment"
     iconFile="$INSTALL_PATH\resources\grisu.ico"
     iconIndex="0"
     initialState="normal"

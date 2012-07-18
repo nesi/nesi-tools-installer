@@ -106,6 +106,27 @@
      KdeSubstUID="false"
      initialState="normal">
      <createForPack name="NeSI tools"/>
+   </shortcut>     
+   
+   <shortcut
+     name="NeSI Setup"
+     programGroup="yes"
+     desktop="yes"
+     applications="no"
+     startMenu="no"
+     startup="no"
+     target="$INSTALL_PATH/bin/nesi-setup"
+     commandLine=""
+     description="Helper application to setup certain aspects of the NeSI environment"
+     workingDirectory="$INSTALL_PATH/bin"
+	 iconFile="$INSTALL_PATH/resources/icon.png"
+     iconIndex="0"
+     type="Application"
+     encoding="UTF-8"
+     terminal="false"
+     KdeSubstUID="false"
+     initialState="normal">
+     <createForPack name="NeSI tools"/>
    </shortcut>      
 
   
