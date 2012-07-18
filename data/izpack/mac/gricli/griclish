@@ -1,0 +1,27 @@
+#!/bin/sh
+
+APPDIR="$HOME/Library/Application Support/NeSI/"
+
+#DIR=$(cd "$(dirname "$0")"; pwd)
+DIR=/Library/Frameworks/NeSI/
+
+if [ ! -d "$APPDIR" ]
+then
+  mkdir -p "$APPDIR"
+fi
+
+if [ ! -f "$APPDIR/getdown.txt" ] 
+then 
+	cp "$DIR/resources/getdown.txt" "$APPDIR"
+fi
+
+if [ ! -f "$APPDIR/combinedClient-binary.jar" ] 
+then 
+	cp "$DIR/launch/combinedClient-binary.jar" "$APPDIR"
+fi
+
+echo "Checking for updates. This might take a while..."
+java -Dsilent=true -jar "$DIR/launch/getdown-client.jar" "$APPDIR"
+
+export X509_USER_PROXY="$HOME/.grid/grid.proxy"
+java -cp "$APPDIR/combinedClient-binary.jar" grisu.gricli.Gricli $@
