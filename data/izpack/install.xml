@@ -168,11 +168,7 @@
 			<file os="windows" src="windows/uninstall.vbs" targetdir="$INSTALL_PATH/resources"></file>
 			<file os="windows" src="windows/uninstall.ico" targetdir="$INSTALL_PATH/resources"></file>
 			
-			
-			<file  src="linux/griclish" targetdir="$INSTALL_PATH/bin">
-			</file>
-			<executable  targetfile="$INSTALL_PATH/bin/griclish" keep="true" stage="never">
-			</executable>
+
 			
 			
 			
