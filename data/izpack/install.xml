@@ -158,7 +158,7 @@
 			<file os="macosx" src="mac/grisu-template/grisu-template" targetdir="/usr/bin"></file>
 			<executable os="macosx" targetfile="/usr/bin/grisu-template" keep="true" stage="never">
 			</executable>			
-			<file os="macosx" src="mac/gricli/grisu-template-wrapper.sh" targetdir="$INSTALL_PATH/Grisu Template.app/Contents/MacOS"></file>
+			<file os="macosx" src="mac/grisu-template/grisu-template-wrapper.sh" targetdir="$INSTALL_PATH/Grisu Template.app/Contents/MacOS"></file>
 			<executable os="macosx" targetfile="$INSTALL_PATH/Grisu Template.app/Contents/MacOS/grisu-template-wrapper.sh" keep="true" stage="never">
 			</executable>	
 
