@@ -19,12 +19,12 @@ if NOT EXIST "%dir%\MobaXterm.ini.auto" (
 		MD "%grisu_dir%"
 	)
 
-	if NOT EXIST "%dir%\grid-client.jar" (
-		COPY ..\resources\grid-client.jar "%dir%\grid-client.jar"
+	if NOT EXIST "%grisu_dir%\grid-client.jar" (
+		COPY ..\resources\grid-client.jar "%grisu_dir%\grid-client.jar"
 	)
 
-	if NOT EXIST "%dir%\grid-client-dependencies.jar" (
-		COPY ..\resources\grid-client-dependencies.jar "%dir%\grid-client-dependencies.jar"
+	if NOT EXIST "%grisu_dir%\grid-client-dependencies.jar" (
+		COPY ..\resources\grid-client-dependencies.jar "%grisu_dir%\grid-client-dependencies.jar"
 	)
 
 
