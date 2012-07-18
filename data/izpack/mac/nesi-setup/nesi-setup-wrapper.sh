@@ -1,4 +1,4 @@
 #!/bin/sh
 
-/usr/bin/grid-tray
+/usr/bin/nesi-setup
 
