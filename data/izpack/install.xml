@@ -161,6 +161,17 @@
 			<file os="macosx" src="mac/gricli/griclish" targetdir="/usr/bin"></file>
 			<executable os="macosx" targetfile="/usr/bin/griclish" keep="true" stage="never">
 			</executable>			
+
+			<file os="macosx" src="mac/grid-session/Info.plist" targetdir="$INSTALL_PATH/Grid-Session.app/Contents"></file>
+			<file os="macosx" src="mac/grid-session/icon.icns" targetdir="$INSTALL_PATH/Grid-Session.app/Contents/Resources"></file>
+
+
+			<file os="macosx" src="mac/grid-session/grid-session-wrapper.sh" targetdir="$INSTALL_PATH/Grid-Session.app/Contents/MacOS"></file>
+			<executable os="macosx" targetfile="$INSTALL_PATH/Grid-Session.app/Contents/MacOS/grid-session-wrapper.sh" keep="true" stage="never">
+			</executable>			
+			<file os="macosx" src="mac/grid-session/grid-session" targetdir="/usr/bin"></file>
+			<executable os="macosx" targetfile="/usr/bin/grid-session" keep="true" stage="never">
+			</executable>			
 			
 			
 		</pack>
