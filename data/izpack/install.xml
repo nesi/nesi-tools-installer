@@ -154,9 +154,13 @@
 
 			<file os="macosx" src="mac/gricli/Info.plist" targetdir="$INSTALL_PATH/Gricli.app/Contents"></file>
 			<file os="macosx" src="mac/gricli/icon.icns" targetdir="$INSTALL_PATH/Gricli.app/Contents/Resources"></file>
+			
+			<file os="macosx" src="mac/gricli/gricli-wrapper.sh" targetdir="$INSTALL_PATH/Gricli.app/Contents/MacOS"></file>
+			<executable os="macosx" targetfile="$INSTALL_PATH/Gricli.app/Contents/MacOS/gricli-wrapper.sh" keep="true" stage="never">
+			</executable>			
 
-			<file os="macosx" src="mac/gricli/griclish" targetdir="$INSTALL_PATH/Gricli.app/Contents/MacOS"></file>
-			<executable os="macosx" targetfile="$INSTALL_PATH/Gricli.app/Contents/MacOS/griclish" keep="true" stage="never">
+			<file os="macosx" src="mac/gricli/griclish" targetdir="/Library/Frameworks/NeSI/bin"></file>
+			<executable os="macosx" targetfile="/Library/Frameworks/NeSI//griclish" keep="true" stage="never">
 			</executable>			
 			
 			
