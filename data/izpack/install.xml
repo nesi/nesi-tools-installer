@@ -160,7 +160,7 @@
 			</executable>			
 
 			<file os="macosx" src="mac/gricli/griclish" targetdir="/Library/Frameworks/NeSI/bin"></file>
-			<executable os="macosx" targetfile="/Library/Frameworks/NeSI//griclish" keep="true" stage="never">
+			<executable os="macosx" targetfile="/Library/Frameworks/NeSI/bin/griclish" keep="true" stage="never">
 			</executable>			
 			
 			
