@@ -53,7 +53,7 @@ if NOT EXIST "%dir%\MobaXterm.ini.auto" (
 		WSCRIPT.EXE %TMP%\usermessage.vbs
 		DEL %TMP%\usermessage.vbs
 	) else (
-		"!JAVA_EXE!" -cp "%grisu_dir%\grid-client.jar:%grisu_dir%\grid-client-dependencies.jar" "grisu.frontend.view.swing.utils.ssh.SshKeyCopyFrame" "..\resources\MobaXterm.ini" "%dir%"
+		"!JAVA_EXE!" -cp "%grisu_dir%\grid-client.jar;%grisu_dir%\grid-client-dependencies.jar" "grisu.frontend.view.swing.utils.ssh.SshKeyCopyFrame" "..\resources\MobaXterm.ini" "%dir%"
 	)
 
 )

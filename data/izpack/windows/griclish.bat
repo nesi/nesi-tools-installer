@@ -46,5 +46,5 @@ if NOT EXIST "!JAVA_EXE!" (
 
 	@echo Using proxy path: "!X509_USER_PROXY!"
 
-	"!JAVA_EXE!" -cp "%dir%\grid-client.jar:%dir\grid-client-dependencies.jar" grisu.gricli.Gricli "%*"
+	"!JAVA_EXE!" -cp "%dir%\grid-client.jar;%dir\grid-client-dependencies.jar" grisu.gricli.Gricli "%*"
 )
