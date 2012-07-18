@@ -149,7 +149,7 @@
 			
 			
 			<file os="macosx" src="getdown-client.jar" targetdir="/Library/Frameworks/NeSI/launch"></file>
-			<file os="macosx" src="grid-client-care.jar" targetdir="/Library/Frameworks/NeSI/launch"></file>
+			<file os="macosx" src="grid-client-core.jar" targetdir="/Library/Frameworks/NeSI/launch"></file>
 			<file os="macosx" src="grid-client-dependencies.jar" targetdir="/Library/Frameworks/NeSI/launch"></file>
 			<file os="macosx" src="getdown.txt" targetdir="/Library/Frameworks/NeSI/resources"></file>
 			<file os="macosx" src="nesi.png" targetdir="/Library/Frameworks/NeSI/resources"></file>
