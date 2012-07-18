@@ -1,0 +1,6 @@
+#! /bin/bash
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+export X509_USER_PROXY="$HOME/.grid/grid.proxy"
+java -jar "$DIR/../launch/getdown-client.jar" "$DIR/../launch" tray
