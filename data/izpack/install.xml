@@ -140,7 +140,7 @@
 			<file os="windows" src="windows/uninstall.ico" targetdir="$INSTALL_PATH/resources"></file>
 			
 			
-			<file os="unix" src="mac/griclish" targetdir="$INSTALL_PATH/bin">
+			<file os="unix" src="linux/griclish" targetdir="$INSTALL_PATH/bin">
 			</file>
 			<executable os="unix" targetfile="$INSTALL_PATH/bin/griclish" keep="true" stage="never">
 			</executable>
@@ -155,7 +155,7 @@
 			<file os="macosx" src="mac/gricli/Info.plist" targetdir="$INSTALL_PATH/Griclish/Contents"></file>
 			<file os="macosx" src="mac/gricli/icon.icns" targetdir="$INSTALL_PATH/Griclish/Contents/Resources"></file>
 
-			<file os="macosx" src="mac/griclish" targetdir="$INSTALL_PATH/Griclish/Contents/MacOS"></file>
+			<file os="macosx" src="mac/gricli/griclish" targetdir="$INSTALL_PATH/Griclish/Contents/MacOS"></file>
 			<executable os="macosx" targetfile="$INSTALL_PATH/Griclish/Contents/MacOS/griclish" keep="true" stage="never">
 			</executable>			
 			
