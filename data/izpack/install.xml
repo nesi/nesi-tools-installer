@@ -73,7 +73,7 @@
 			<file os="unix" src="grid-client-dependencies.jar" targetdir="$INSTALL_PATH/launch"></file>
 			<file os="unix" src="getdown.txt" targetdir="$INSTALL_PATH/launch"></file>
 			<file os="unix" src="getdown-client.jar" targetdir="$INSTALL_PATH/launch"></file>
-			<file os="unix" src="grisu.png" targetdir="$INSTALL_PATH/launch"></file>
+			<file os="unix" src="nesi.png" targetdir="$INSTALL_PATH/launch"></file>
 			<file os="unix" src="icon.png" targetdir="$INSTALL_PATH/resources"></file>
 			<file os="unix" src="uninstall.png" targetdir="$INSTALL_PATH/resources"></file>
 
@@ -132,7 +132,7 @@
 			<file os="windows" src="grid-client-dependencies.jar" targetdir="$INSTALL_PATH/resources"></file>
 			<file os="windows" src="getdown-client.jar" targetdir="$INSTALL_PATH/resources"></file>
 			<file os="windows" src="getdown.txt" targetdir="$INSTALL_PATH/resources"></file>
-			<file os="windows" src="grisu.png" targetdir="$INSTALL_PATH/resources"></file>
+			<file os="windows" src="nesi.png" targetdir="$INSTALL_PATH/resources"></file>
 			<file os="windows" src="mobaxterm.ico" targetdir="$INSTALL_PATH/resources"></file>
 			<file os="windows" src="grisu.ico" targetdir="$INSTALL_PATH/resources"></file>
 			
@@ -152,7 +152,7 @@
 			<file os="macosx" src="grid-client.jar" targetdir="/Library/Frameworks/NeSI/launch"></file>
 			<file os="macosx" src="grid-client-dependencies.jar" targetdir="/Library/Frameworks/NeSI/launch"></file>
 			<file os="macosx" src="getdown.txt" targetdir="/Library/Frameworks/NeSI/resources"></file>
-			<file os="macosx" src="grisu.png" targetdir="/Library/Frameworks/NeSI/resources"></file>
+			<file os="macosx" src="nesi.png" targetdir="/Library/Frameworks/NeSI/resources"></file>
 
 
 			<file os="macosx" src="mac/grisu-template/Info.plist" targetdir="$INSTALL_PATH/Grisu Template.app/Contents"></file>

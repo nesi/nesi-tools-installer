@@ -15,9 +15,9 @@ then
 	cp "$DIR/resources/getdown.txt" "$APPDIR"
 fi
 
-if [ ! -f "$APPDIR/grisu.png" ] 
+if [ ! -f "$APPDIR/nesi.png" ] 
 then 
-	cp "$DIR/resources/grisu.png" "$APPDIR"
+	cp "$DIR/resources/nesi.png" "$APPDIR"
 fi
 
 if [ ! -f "$APPDIR/grid-client.jar" ] 

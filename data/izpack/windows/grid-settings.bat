@@ -19,8 +19,8 @@ if NOT EXIST "%dir%\getdown.txt" (
 	COPY ..\resources\getdown.txt "%dir%\getdown.txt"
 )
 
-if NOT EXIST "%dir%\grisu.png" (
-	COPY ..\resources\grisu.png "%dir%\grisu.png"
+if NOT EXIST "%dir%\nesi.png" (
+	COPY ..\resources\nesi.png "%dir%\nesi.png"
 )
 
 

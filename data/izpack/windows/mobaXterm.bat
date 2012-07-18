@@ -32,8 +32,8 @@ if NOT EXIST "%dir%\MobaXterm.ini.auto" (
 		COPY ..\resources\getdown.txt "%grisu_dir%\getdown.txt"
 	)
 
-	if NOT EXIST "%grisu_dir%\grisu.png" (
-		COPY ..\resources\grisu.png "%grisu_dir%\grisu.png"
+	if NOT EXIST "%grisu_dir%\nesi.png" (
+		COPY ..\resources\nesi.png "%grisu_dir%\nesi.png"
 	)
 	
 
