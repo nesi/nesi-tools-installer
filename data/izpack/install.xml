@@ -152,11 +152,11 @@
 			<file os="macosx" src="getdown.txt" targetdir="/Library/Frameworks/NeSI/resources"></file>
 			<file os="macosx" src="grisu.png" targetdir="/Library/Frameworks/NeSI/resources"></file>
 
-			<file os="macosx" src="mac/gricli/Info.plist" targetdir="$INSTALL_PATH/Griclish/Contents"></file>
-			<file os="macosx" src="mac/gricli/icon.icns" targetdir="$INSTALL_PATH/Griclish/Contents/Resources"></file>
+			<file os="macosx" src="mac/gricli/Info.plist" targetdir="$INSTALL_PATH/Gricli.app/Contents"></file>
+			<file os="macosx" src="mac/gricli/icon.icns" targetdir="$INSTALL_PATH/Gricli.app/Contents/Resources"></file>
 
-			<file os="macosx" src="mac/gricli/griclish" targetdir="$INSTALL_PATH/Griclish/Contents/MacOS"></file>
-			<executable os="macosx" targetfile="$INSTALL_PATH/Griclish/Contents/MacOS/griclish" keep="true" stage="never">
+			<file os="macosx" src="mac/gricli/griclish" targetdir="$INSTALL_PATH/Gricli.app/Contents/MacOS"></file>
+			<executable os="macosx" targetfile="$INSTALL_PATH/Gricli.app/Contents/MacOS/griclish" keep="true" stage="never">
 			</executable>			
 			
 			
