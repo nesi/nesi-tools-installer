@@ -179,7 +179,7 @@
 							<goal>wget</goal>
 						</goals>
 						<configuration>
-							<url>http://code.ceres.auckland.ac.nz/snapshot-downloads/installers/grid-client.jar</url>
+							<url>http://code.ceres.auckland.ac.nz/snapshot-downloads/installers/grid-client-core.jar</url>
 							<unpack>false</unpack>
 							<outputDirectory>${staging.dir}</outputDirectory>
 						</configuration>

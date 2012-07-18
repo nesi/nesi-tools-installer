@@ -69,7 +69,7 @@
 		<pack name="NeSI tools" required="yes" preselected="yes">
 			<description>Core applications and libraries</description>
 
-			<file os="unix" src="grid-client.jar" targetdir="$INSTALL_PATH/launch"></file>
+			<file os="unix" src="grid-client-core.jar" targetdir="$INSTALL_PATH/launch"></file>
 			<file os="unix" src="grid-client-dependencies.jar" targetdir="$INSTALL_PATH/launch"></file>
 			<file os="unix" src="getdown.txt" targetdir="$INSTALL_PATH/launch"></file>
 			<file os="unix" src="getdown-client.jar" targetdir="$INSTALL_PATH/launch"></file>
@@ -128,7 +128,7 @@
 			<file os="windows" src="windows/mobaXterm.bat" targetdir="$INSTALL_PATH/bin"></file>
 			<file os="windows" src="windows/mobaXterm.vbs" targetdir="$INSTALL_PATH/bin"></file>
 			<file os="windows" src="MobaXterm.ini" targetdir="$INSTALL_PATH/resources"></file>
-			<file os="windows" src="grid-client.jar" targetdir="$INSTALL_PATH/resources"></file>
+			<file os="windows" src="grid-client-core.jar" targetdir="$INSTALL_PATH/resources"></file>
 			<file os="windows" src="grid-client-dependencies.jar" targetdir="$INSTALL_PATH/resources"></file>
 			<file os="windows" src="getdown-client.jar" targetdir="$INSTALL_PATH/resources"></file>
 			<file os="windows" src="getdown.txt" targetdir="$INSTALL_PATH/resources"></file>
@@ -149,7 +149,7 @@
 			
 			
 			<file os="macosx" src="getdown-client.jar" targetdir="/Library/Frameworks/NeSI/launch"></file>
-			<file os="macosx" src="grid-client.jar" targetdir="/Library/Frameworks/NeSI/launch"></file>
+			<file os="macosx" src="grid-client-care.jar" targetdir="/Library/Frameworks/NeSI/launch"></file>
 			<file os="macosx" src="grid-client-dependencies.jar" targetdir="/Library/Frameworks/NeSI/launch"></file>
 			<file os="macosx" src="getdown.txt" targetdir="/Library/Frameworks/NeSI/resources"></file>
 			<file os="macosx" src="nesi.png" targetdir="/Library/Frameworks/NeSI/resources"></file>

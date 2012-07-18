@@ -6,8 +6,8 @@ if NOT EXIST "%dir%" (
 	MD "%dir%"
 )
 
-if NOT EXIST "%dir%\grid-client.jar" (
-	COPY ..\resources\grid-client.jar "%dir%\grid-client.jar"
+if NOT EXIST "%dir%\grid-client-core.jar" (
+	COPY ..\resources\grid-client-core.jar "%dir%\grid-client-core.jar"
 )
 
 if NOT EXIST "%dir%\grid-client-dependencies.jar" (

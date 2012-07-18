@@ -20,9 +20,9 @@ then
 	cp "$DIR/resources/nesi.png" "$APPDIR"
 fi
 
-if [ ! -f "$APPDIR/grid-client.jar" ] 
+if [ ! -f "$APPDIR/grid-client-core.jar" ] 
 then 
-	cp "$DIR/launch/grid-client.jar" "$APPDIR"
+	cp "$DIR/launch/grid-client-core.jar" "$APPDIR"
 fi
 
 if [ ! -f "$APPDIR/grid-client-dependencies.jar" ] 
