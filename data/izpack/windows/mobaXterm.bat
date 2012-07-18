@@ -19,9 +19,14 @@ if NOT EXIST "%dir%\MobaXterm.ini.auto" (
 		MD "%grisu_dir%"
 	)
 
-	if NOT EXIST "%grisu_dir%\combinedClient-binary.jar" (
-		COPY ..\resources\combinedClient-binary.jar "%grisu_dir%\combinedClient-binary.jar"
+	if NOT EXIST "%dir%\grid-client.jar" (
+		COPY ..\resources\grid-client.jar "%dir%\grid-client.jar"
 	)
+
+	if NOT EXIST "%dir%\grid-client-dependencies.jar" (
+		COPY ..\resources\grid-client-dependencies.jar "%dir%\grid-client-dependencies.jar"
+	)
+
 
 	if NOT EXIST "%grisu_dir%\getdown.txt" (
 		COPY ..\resources\getdown.txt "%grisu_dir%\getdown.txt"
@@ -48,7 +53,7 @@ if NOT EXIST "%dir%\MobaXterm.ini.auto" (
 		WSCRIPT.EXE %TMP%\usermessage.vbs
 		DEL %TMP%\usermessage.vbs
 	) else (
-		"!JAVA_EXE!" -cp "%grisu_dir%\combinedClient-binary.jar" "grisu.frontend.view.swing.utils.ssh.SshKeyCopyFrame" "..\resources\MobaXterm.ini" "%dir%"
+		"!JAVA_EXE!" -cp "%grisu_dir%\grid-client.jar:%grisu_dir%\grid-client-dependencies.jar" "grisu.frontend.view.swing.utils.ssh.SshKeyCopyFrame" "..\resources\MobaXterm.ini" "%dir%"
 	)
 
 )

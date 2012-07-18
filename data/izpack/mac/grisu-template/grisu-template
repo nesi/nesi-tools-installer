@@ -20,9 +20,14 @@ then
 	cp "$DIR/resources/grisu.png" "$APPDIR"
 fi
 
-if [ ! -f "$APPDIR/combinedClient-binary.jar" ] 
+if [ ! -f "$APPDIR/grid-client.jar" ] 
 then 
-	cp "$DIR/launch/combinedClient-binary.jar" "$APPDIR"
+	cp "$DIR/launch/grid-client.jar" "$APPDIR"
+fi
+
+if [ ! -f "$APPDIR/grid-client-dependencies.jar" ] 
+then 
+	cp "$DIR/launch/grid-client-dependencies.jar" "$APPDIR"
 fi
 
 

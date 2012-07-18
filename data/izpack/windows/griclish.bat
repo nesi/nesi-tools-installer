@@ -5,9 +5,14 @@ set dir=%APPDATA%\NeSI\Grisu
 if NOT EXIST "%dir%" (
 	MD "%dir%"
 )
-if NOT EXIST "%dir%\combinedClient-binary.jar" (
-	COPY ..\resources\combinedClient-binary.jar "%dir%\combinedClient-binary.jar"
+if NOT EXIST "%dir%\grid-client.jar" (
+	COPY ..\resources\grid-client.jar "%dir%\grid-client.jar"
 )
+
+if NOT EXIST "%dir%\grid-client-dependencies.jar" (
+	COPY ..\resources\grid-client-dependencies.jar "%dir%\grid-client-dependencies.jar"
+)
+
 
 if NOT EXIST "%dir%\getdown.txt" (
 	COPY ..\resources\getdown.txt "%dir%\getdown.txt"
@@ -41,5 +46,5 @@ if NOT EXIST "!JAVA_EXE!" (
 
 	@echo Using proxy path: "!X509_USER_PROXY!"
 
-	"!JAVA_EXE!" -cp "%dir%\combinedClient-binary.jar" grisu.gricli.Gricli "%*"
+	"!JAVA_EXE!" -cp "%dir%\grid-client.jar:%dir\grid-client-dependencies.jar" grisu.gricli.Gricli "%*"
 )

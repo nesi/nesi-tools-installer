@@ -15,13 +15,18 @@ then
 	cp "$DIR/resources/getdown.txt" "$APPDIR"
 fi
 
-if [ ! -f "$APPDIR/combinedClient-binary.jar" ] 
+if [ ! -f "$APPDIR/grid-client.jar" ] 
 then 
-	cp "$DIR/launch/combinedClient-binary.jar" "$APPDIR"
+	cp "$DIR/launch/grid-client.jar" "$APPDIR"
+fi
+
+if [ ! -f "$APPDIR/grid-client-dependencies.jar" ] 
+then 
+	cp "$DIR/launch/grid-client-dependencies.jar" "$APPDIR"
 fi
 
 echo "Checking for updates. This might take a while..."
 java -Dsilent=true -jar "$DIR/launch/getdown-client.jar" "$APPDIR"
 
 export X509_USER_PROXY="$HOME/.grid/grid.proxy"
-java -cp "$APPDIR/combinedClient-binary.jar" grisu.Grython $@
+java -cp "$APPDIR/grid-client.jar:$APPDIR/grid-client-dependencies.jar" grisu.Grython $@

@@ -69,14 +69,14 @@
 		<pack name="NeSI tools" required="yes" preselected="yes">
 			<description>Core applications and libraries</description>
 
-			<file os="unix" src="combinedClient-binary.jar" targetdir="$INSTALL_PATH/launch"></file>
+			<file os="unix" src="grid-client.jar" targetdir="$INSTALL_PATH/launch"></file>
+			<file os="unix" src="grid-client-dependencies.jar" targetdir="$INSTALL_PATH/launch"></file>
 			<file os="unix" src="getdown.txt" targetdir="$INSTALL_PATH/launch"></file>
 			<file os="unix" src="getdown-client.jar" targetdir="$INSTALL_PATH/launch"></file>
 			<file os="unix" src="grisu.png" targetdir="$INSTALL_PATH/launch"></file>
 			<file os="unix" src="icon.png" targetdir="$INSTALL_PATH/resources"></file>
 			<file os="unix" src="uninstall.png" targetdir="$INSTALL_PATH/resources"></file>
 
-			
 			<file os="unix" src="linux/griclish" targetdir="$INSTALL_PATH/bin">
 			</file>
 			<executable os="unix" targetfile="$INSTALL_PATH/bin/griclish" keep="true" stage="never">
@@ -128,7 +128,8 @@
 			<file os="windows" src="windows/mobaXterm.bat" targetdir="$INSTALL_PATH/bin"></file>
 			<file os="windows" src="windows/mobaXterm.vbs" targetdir="$INSTALL_PATH/bin"></file>
 			<file os="windows" src="MobaXterm.ini" targetdir="$INSTALL_PATH/resources"></file>
-			<file os="windows" src="combinedClient-binary.jar" targetdir="$INSTALL_PATH/resources"></file>
+			<file os="windows" src="grid-client.jar" targetdir="$INSTALL_PATH/resources"></file>
+			<file os="windows" src="grid-client-dependencies.jar" targetdir="$INSTALL_PATH/resources"></file>
 			<file os="windows" src="getdown-client.jar" targetdir="$INSTALL_PATH/resources"></file>
 			<file os="windows" src="getdown.txt" targetdir="$INSTALL_PATH/resources"></file>
 			<file os="windows" src="grisu.png" targetdir="$INSTALL_PATH/resources"></file>
@@ -148,7 +149,8 @@
 			
 			
 			<file os="macosx" src="getdown-client.jar" targetdir="/Library/Frameworks/NeSI/launch"></file>
-			<file os="macosx" src="combinedClient-binary.jar" targetdir="/Library/Frameworks/NeSI/launch"></file>
+			<file os="macosx" src="grid-client.jar" targetdir="/Library/Frameworks/NeSI/launch"></file>
+			<file os="macosx" src="grid-client-dependencies.jar" targetdir="/Library/Frameworks/NeSI/launch"></file>
 			<file os="macosx" src="getdown.txt" targetdir="/Library/Frameworks/NeSI/resources"></file>
 			<file os="macosx" src="grisu.png" targetdir="/Library/Frameworks/NeSI/resources"></file>
 

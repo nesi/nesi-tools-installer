@@ -173,17 +173,29 @@
 				<version>1.0.0</version>
 				<executions>
 					<execution>
-						<id>download-gricli</id>
+						<id>download-client</id>
 						<phase>validate</phase>
 						<goals>
 							<goal>wget</goal>
 						</goals>
 						<configuration>
-							<url>http://code.ceres.auckland.ac.nz/snapshot-downloads/combinedClient/combinedClient-binary.jar</url>
+							<url>http://code.ceres.auckland.ac.nz/snapshot-downloads/installers/grid-client.jar</url>
 							<unpack>false</unpack>
 							<outputDirectory>${staging.dir}</outputDirectory>
 						</configuration>
-					</execution>			
+					</execution>		
+					<execution>
+						<id>download-client-dependencies</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>wget</goal>
+						</goals>
+						<configuration>
+							<url>http://code.ceres.auckland.ac.nz/snapshot-downloads/installers/grid-client-dependencies.jar</url>
+							<unpack>false</unpack>
+							<outputDirectory>${staging.dir}</outputDirectory>
+						</configuration>
+					</execution>							
 					<execution>
 						<id>download-getdown.txt</id>
 						<phase>validate</phase>

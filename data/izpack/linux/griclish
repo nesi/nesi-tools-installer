@@ -9,4 +9,4 @@ java -Dsilent=true -jar "$DIR/../launch/getdown-client.jar" "$DIR/../launch"
 export X509_USER_PROXY="$HOME/.grid/grid.proxy"
 export JAVA_OPTS="-Djava.awt.headless=true -Xms64m -Xmx64m"
 
-java ${JAVA_OPTS} -cp "$DIR/../launch/combinedClient-binary.jar" grisu.gricli.Gricli $@
+java ${JAVA_OPTS} -cp "$DIR/../launch/grid-client.jar:$DIR/../launch/grid-client-dependencies.jar" grisu.gricli.Gricli $@

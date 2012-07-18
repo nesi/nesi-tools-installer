@@ -11,6 +11,6 @@ java -Dsilent=true -jar "$DIR/../launch/getdown-client.jar" "$DIR/../launch"
 export JAVA_OPTS="-Djava.awt.headless=true"
 
 export X509_USER_PROXY=~/.grid/grid.proxy
-java ${JAVA_OPTS} -cp "$DIR/../launch/combinedClient-binary.jar" grisu.Grython $@
+java ${JAVA_OPTS} -cp "$DIR/../launch/grid-client.jar:$DIR/../launch/grid-client-dependencies.jar" grisu.Grython $@
 
 

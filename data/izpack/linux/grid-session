@@ -9,7 +9,7 @@ java -Dsilent=true -jar "$DIR/../launch/getdown-client.jar" "$DIR/../launch"
 
 export X509_USER_PROXY="$HOME/.grid/grid.proxy"
 export JAVA_OPTS="-Djava.awt.headless=true -Xmx24m"
-java ${JAVA_OPTS} -cp "$DIR/../launch/combinedClient-binary.jar" grith.gridsession.CliSessionControl $@
+java ${JAVA_OPTS} -cp "$DIR/../launch/grid-client.jar:$DIR/../launch/grid-client-dependencies.jar" grith.gridsession.CliSessionControl $@
 
 
 
