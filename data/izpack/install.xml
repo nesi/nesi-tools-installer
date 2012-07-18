@@ -69,51 +69,79 @@
 		<pack name="NeSI tools" required="yes" preselected="yes">
 			<description>Core applications and libraries</description>
 
-			<file os="unix" src="grid-client-core.jar" targetdir="$INSTALL_PATH/launch"></file>
-			<file os="unix" src="grid-client-dependencies.jar" targetdir="$INSTALL_PATH/launch"></file>
-			<file os="unix" src="getdown.txt" targetdir="$INSTALL_PATH/launch"></file>
-			<file os="unix" src="getdown-client.jar" targetdir="$INSTALL_PATH/launch"></file>
-			<file os="unix" src="nesi.png" targetdir="$INSTALL_PATH/launch"></file>
-			<file os="unix" src="icon.png" targetdir="$INSTALL_PATH/resources"></file>
-			<file os="unix" src="uninstall.png" targetdir="$INSTALL_PATH/resources"></file>
-
-			<file os="unix" src="linux/griclish" targetdir="$INSTALL_PATH/bin">
+			<file  src="grid-client-core.jar" targetdir="$INSTALL_PATH/launch">
+				<os name="Linux"/>
 			</file>
-			<executable os="unix" targetfile="$INSTALL_PATH/bin/griclish" keep="true" stage="never">
+			<file  src="grid-client-dependencies.jar" targetdir="$INSTALL_PATH/launch">
+				<os name="Linux"/>
+			</file>
+			<file  src="getdown.txt" targetdir="$INSTALL_PATH/launch">
+				<os name="Linux"/>
+			</file>
+			<file  src="getdown-client.jar" targetdir="$INSTALL_PATH/launch">
+				<os name="Linux"/>
+			</file>
+			<file  src="nesi.png" targetdir="$INSTALL_PATH/launch">
+				<os name="Linux"/>
+			</file>
+			<file  src="icon.png" targetdir="$INSTALL_PATH/resources">
+				<os name="Linux"/>
+			</file>
+			<file  src="uninstall.png" targetdir="$INSTALL_PATH/resources">
+				<os name="Linux"/>
+			</file>
+
+			<file  src="linux/griclish" targetdir="$INSTALL_PATH/bin">
+				<os name="Linux"/>
+			</file>
+			<executable  targetfile="$INSTALL_PATH/bin/griclish" keep="true" stage="never">
+				<os name="Linux"/>
 			</executable>
 						
-			<file os="unix" src="linux/grython" targetdir="$INSTALL_PATH/bin">
+			<file  src="linux/grython" targetdir="$INSTALL_PATH/bin">
+				<os name="Linux"/>
 			</file>
-			<executable os="unix" targetfile="$INSTALL_PATH/bin/grython" keep="true" stage="never">
+			<executable  targetfile="$INSTALL_PATH/bin/grython" keep="true" stage="never">
+				<os name="Linux"/>
 			</executable>
 												
-			<file os="unix" src="linux/grid-session" targetdir="$INSTALL_PATH/bin">
+			<file  src="linux/grid-session" targetdir="$INSTALL_PATH/bin">
+				<os name="Linux"/>
 			</file>
-			<executable os="unix" targetfile="$INSTALL_PATH/bin/grid-session" keep="true" stage="never">
+			<executable  targetfile="$INSTALL_PATH/bin/grid-session" keep="true" stage="never">
+				<os name="Linux"/>
 			</executable>
 
-			<file os="unix" src="linux/grid-tray" targetdir="$INSTALL_PATH/bin">
+			<file  src="linux/grid-tray" targetdir="$INSTALL_PATH/bin">
+				<os name="Linux"/>
 			</file>
-			<executable os="unix" targetfile="$INSTALL_PATH/bin/grid-tray" keep="true" stage="never">
+			<executable  targetfile="$INSTALL_PATH/bin/grid-tray" keep="true" stage="never">
+				<os name="Linux"/>
 			</executable>
 
-			<file os="unix" src="linux/grisu-template" targetdir="$INSTALL_PATH/bin">
+			<file  src="linux/grisu-template" targetdir="$INSTALL_PATH/bin">
+				<os name="Linux"/>
 			</file>
-			<executable os="unix" targetfile="$INSTALL_PATH/bin/grisu-template" keep="true" stage="never">
+			<executable  targetfile="$INSTALL_PATH/bin/grisu-template" keep="true" stage="never">
+				<os name="Linux"/>
 			</executable>
 
-			<file os="unix" src="linux/nesi-setup" targetdir="$INSTALL_PATH/bin">
+			<file  src="linux/nesi-setup" targetdir="$INSTALL_PATH/bin">
+				<os name="Linux"/>
 			</file>
-			<executable os="unix" targetfile="$INSTALL_PATH/bin/nesi-setup" keep="true" stage="never">
+			<executable  targetfile="$INSTALL_PATH/bin/nesi-setup" keep="true" stage="never">
+				<os name="Linux"/>
 			</executable>
 
 			
 			
 			
 			
-			<file os="unix" src="linux/uninstall.sh" targetdir="$INSTALL_PATH/launch">
+			<file  src="linux/uninstall.sh" targetdir="$INSTALL_PATH/launch">
+				<os name="Linux"/>
 			</file>
-			<executable os="unix" targetfile="$INSTALL_PATH/launch/uninstall.sh" keep="true" stage="never">
+			<executable  targetfile="$INSTALL_PATH/launch/uninstall.sh" keep="true" stage="never">
+				<os name="Linux"/>
 			</executable>
 			
 
@@ -141,72 +169,142 @@
 			<file os="windows" src="windows/uninstall.ico" targetdir="$INSTALL_PATH/resources"></file>
 			
 			
-			<file os="unix" src="linux/griclish" targetdir="$INSTALL_PATH/bin">
+			<file  src="linux/griclish" targetdir="$INSTALL_PATH/bin">
 			</file>
-			<executable os="unix" targetfile="$INSTALL_PATH/bin/griclish" keep="true" stage="never">
+			<executable  targetfile="$INSTALL_PATH/bin/griclish" keep="true" stage="never">
 			</executable>
 			
 			
 			
-			<file os="macosx" src="getdown-client.jar" targetdir="/Library/Frameworks/NeSI/launch"></file>
-			<file os="macosx" src="grid-client-core.jar" targetdir="/Library/Frameworks/NeSI/launch"></file>
-			<file os="macosx" src="grid-client-dependencies.jar" targetdir="/Library/Frameworks/NeSI/launch"></file>
-			<file os="macosx" src="getdown.txt" targetdir="/Library/Frameworks/NeSI/resources"></file>
-			<file os="macosx" src="nesi.png" targetdir="/Library/Frameworks/NeSI/resources"></file>
+			<file src="getdown-client.jar" targetdir="/Library/Frameworks/NeSI/launch">
+				<os name="Mac OS X"/>
+			</file>
+			<file  src="grid-client-core.jar" targetdir="/Library/Frameworks/NeSI/launch">
+				<os name="Mac OS X"/>
+			</file>
+			<file  src="grid-client-dependencies.jar" targetdir="/Library/Frameworks/NeSI/launch">
+				<os name="Mac OS X"/>
+			</file>
+			<file  src="getdown.txt" targetdir="/Library/Frameworks/NeSI/resources">
+				<os name="Mac OS X"/>
+			</file>
+			<file  src="nesi.png" targetdir="/Library/Frameworks/NeSI/resources">
+				<os name="Mac OS X"/>
+			</file>
 
 
-			<file os="macosx" src="mac/grisu-template/Info.plist" targetdir="$INSTALL_PATH/Grisu Template.app/Contents"></file>
-			<file os="macosx" src="mac/grisu-template/icon.icns" targetdir="$INSTALL_PATH/Grisu Template.app/Contents/Resources"></file>
-			<file os="macosx" src="mac/grisu-template/grisu-template" targetdir="/usr/bin"></file>
-			<executable os="macosx" targetfile="/usr/bin/grisu-template" keep="true" stage="never">
+			<file  src="mac/grisu-template/Info.plist" targetdir="$INSTALL_PATH/Grisu Template.app/Contents">
+				<os name="Mac OS X"/>
+			</file>
+			<file  src="mac/grisu-template/icon.icns" targetdir="$INSTALL_PATH/Grisu Template.app/Contents/Resources">
+				<os name="Mac OS X"/>
+			</file>
+			<file  src="mac/grisu-template/grisu-template" targetdir="/usr/bin">
+				<os name="Mac OS X"/>
+			</file>
+			<executable  targetfile="/usr/bin/grisu-template" keep="true" stage="never">
+				<os name="Mac OS X"/>
 			</executable>			
-			<file os="macosx" src="mac/grisu-template/grisu-template-wrapper.sh" targetdir="$INSTALL_PATH/Grisu Template.app/Contents/MacOS"></file>
-			<executable os="macosx" targetfile="$INSTALL_PATH/Grisu Template.app/Contents/MacOS/grisu-template-wrapper.sh" keep="true" stage="never">
+			<file  src="mac/grisu-template/grisu-template-wrapper.sh" targetdir="$INSTALL_PATH/Grisu Template.app/Contents/MacOS">
+				<os name="Mac OS X"/>
+			</file>
+			<executable  targetfile="$INSTALL_PATH/Grisu Template.app/Contents/MacOS/grisu-template-wrapper.sh" keep="true" stage="never">
+				<os name="Mac OS X"/>
 			</executable>	
 			
-			<file os="macosx" src="mac/grid-tray/Info.plist" targetdir="$INSTALL_PATH/Grid-Tray.app/Contents"></file>
-			<file os="macosx" src="mac/grid-tray/icon.icns" targetdir="$INSTALL_PATH/Grid-Tray.app/Contents/Resources"></file>
-			<file os="macosx" src="mac/grid-tray/grid-tray" targetdir="/usr/bin"></file>
-			<executable os="macosx" targetfile="/usr/bin/grid-tray" keep="true" stage="never">
+			<file  src="mac/grid-tray/Info.plist" targetdir="$INSTALL_PATH/Grid-Tray.app/Contents">
+				<os name="Mac OS X"/>
+			</file>
+			<file  src="mac/grid-tray/icon.icns" targetdir="$INSTALL_PATH/Grid-Tray.app/Contents/Resources">
+				<os name="Mac OS X"/>
+			</file>
+			<file  src="mac/grid-tray/grid-tray" targetdir="/usr/bin">
+				<os name="Mac OS X"/>
+			</file>
+			<executable  targetfile="/usr/bin/grid-tray" keep="true" stage="never">
+				<os name="Mac OS X"/>
 			</executable>			
-			<file os="macosx" src="mac/grid-tray/grid-tray-wrapper.sh" targetdir="$INSTALL_PATH/Grid-Tray.app/Contents/MacOS"></file>
-			<executable os="macosx" targetfile="$INSTALL_PATH/Grid-Tray.app/Contents/MacOS/grid-tray-wrapper.sh" keep="true" stage="never">
+			<file  src="mac/grid-tray/grid-tray-wrapper.sh" targetdir="$INSTALL_PATH/Grid-Tray.app/Contents/MacOS">
+				<os name="Mac OS X"/>
+			</file>
+			<executable  targetfile="$INSTALL_PATH/Grid-Tray.app/Contents/MacOS/grid-tray-wrapper.sh" keep="true" stage="never">
+				<os name="Mac OS X"/>
 			</executable>		
 			
-			<file os="macosx" src="mac/nesi-setup/Info.plist" targetdir="$INSTALL_PATH/NeSI-Setup.app/Contents"></file>
-			<file os="macosx" src="mac/nesi-setup/icon.icns" targetdir="$INSTALL_PATH/NeSI-Setup.app/Contents/Resources"></file>
-			<file os="macosx" src="mac/nesi-setup/nesi-setup" targetdir="/usr/bin"></file>
-			<executable os="macosx" targetfile="/usr/bin/nesi-setup" keep="true" stage="never">
+			<file  src="mac/nesi-setup/Info.plist" targetdir="$INSTALL_PATH/NeSI-Setup.app/Contents">
+				<os name="Mac OS X"/>
+			</file>
+			<file  src="mac/nesi-setup/icon.icns" targetdir="$INSTALL_PATH/NeSI-Setup.app/Contents/Resources">
+				<os name="Mac OS X"/>
+			</file>
+			<file  src="mac/nesi-setup/nesi-setup" targetdir="/usr/bin">
+				<os name="Mac OS X"/>
+			</file>
+			<executable  targetfile="/usr/bin/nesi-setup" keep="true" stage="never">
+				<os name="Mac OS X"/>
 			</executable>			
-			<file os="macosx" src="mac/nesi-setup/nesi-setup-wrapper.sh" targetdir="$INSTALL_PATH/NeSI-Setup.app/Contents/MacOS"></file>
-			<executable os="macosx" targetfile="$INSTALL_PATH/NeSI-Setup.app/Contents/MacOS/nesi-setup-wrapper.sh" keep="true" stage="never">
+			<file  src="mac/nesi-setup/nesi-setup-wrapper.sh" targetdir="$INSTALL_PATH/NeSI-Setup.app/Contents/MacOS">
+				<os name="Mac OS X"/>
+			</file>
+			<executable  targetfile="$INSTALL_PATH/NeSI-Setup.app/Contents/MacOS/nesi-setup-wrapper.sh" keep="true" stage="never">
+				<os name="Mac OS X"/>
 			</executable>			
 
-			<file os="macosx" src="mac/gricli/Info.plist" targetdir="$INSTALL_PATH/Gricli.app/Contents"></file>
-			<file os="macosx" src="mac/gricli/icon.icns" targetdir="$INSTALL_PATH/Gricli.app/Contents/Resources"></file>
-			<file os="macosx" src="mac/gricli/gricli-wrapper.sh" targetdir="$INSTALL_PATH/Gricli.app/Contents/MacOS"></file>
-			<executable os="macosx" targetfile="$INSTALL_PATH/Gricli.app/Contents/MacOS/gricli-wrapper.sh" keep="true" stage="never">
+			<file  src="mac/gricli/Info.plist" targetdir="$INSTALL_PATH/Gricli.app/Contents">
+				<os name="Mac OS X"/>
+			</file>
+			<file  src="mac/gricli/icon.icns" targetdir="$INSTALL_PATH/Gricli.app/Contents/Resources">
+				<os name="Mac OS X"/>
+			</file>
+			<file  src="mac/gricli/gricli-wrapper.sh" targetdir="$INSTALL_PATH/Gricli.app/Contents/MacOS">
+				<os name="Mac OS X"/>
+			</file>
+			<executable  targetfile="$INSTALL_PATH/Gricli.app/Contents/MacOS/gricli-wrapper.sh" keep="true" stage="never">
+				<os name="Mac OS X"/>
 			</executable>			
-			<file os="macosx" src="mac/gricli/griclish" targetdir="/usr/bin"></file>
-			<executable os="macosx" targetfile="/usr/bin/griclish" keep="true" stage="never">
+			<file  src="mac/gricli/griclish" targetdir="/usr/bin">
+				<os name="Mac OS X"/>
+			</file>
+			<executable  targetfile="/usr/bin/griclish" keep="true" stage="never">
+				<os name="Mac OS X"/>
 			</executable>			
 			
-			<file os="macosx" src="mac/grython/Info.plist" targetdir="$INSTALL_PATH/Grython.app/Contents"></file>
-			<file os="macosx" src="mac/grython/icon.icns" targetdir="$INSTALL_PATH/Grython.app/Contents/Resources"></file>
-			<file os="macosx" src="mac/grython/grython-wrapper.sh" targetdir="$INSTALL_PATH/Grython.app/Contents/MacOS"></file>
-			<executable os="macosx" targetfile="$INSTALL_PATH/Grython.app/Contents/MacOS/grython-wrapper.sh" keep="true" stage="never">
+			<file  src="mac/grython/Info.plist" targetdir="$INSTALL_PATH/Grython.app/Contents">
+				<os name="Mac OS X"/>
+			</file>
+			<file  src="mac/grython/icon.icns" targetdir="$INSTALL_PATH/Grython.app/Contents/Resources">
+				<os name="Mac OS X"/>
+			</file>
+			<file  src="mac/grython/grython-wrapper.sh" targetdir="$INSTALL_PATH/Grython.app/Contents/MacOS">
+				<os name="Mac OS X"/>
+			</file>
+			<executable  targetfile="$INSTALL_PATH/Grython.app/Contents/MacOS/grython-wrapper.sh" keep="true" stage="never">
+				<os name="Mac OS X"/>
 			</executable>			
-			<file os="macosx" src="mac/grython/grython" targetdir="/usr/bin"></file>
-			<executable os="macosx" targetfile="/usr/bin/grython" keep="true" stage="never">
+			<file  src="mac/grython/grython" targetdir="/usr/bin">
+				<os name="Mac OS X"/>
+			</file>
+			<executable  targetfile="/usr/bin/grython" keep="true" stage="never">
+				<os name="Mac OS X"/>
 			</executable>					
 
-			<file os="macosx" src="mac/grid-session/Info.plist" targetdir="$INSTALL_PATH/Grid-Session.app/Contents"></file>
-			<file os="macosx" src="mac/grid-session/icon.icns" targetdir="$INSTALL_PATH/Grid-Session.app/Contents/Resources"></file>
-			<file os="macosx" src="mac/grid-session/grid-session-wrapper.sh" targetdir="$INSTALL_PATH/Grid-Session.app/Contents/MacOS"></file>
-			<executable os="macosx" targetfile="$INSTALL_PATH/Grid-Session.app/Contents/MacOS/grid-session-wrapper.sh" keep="true" stage="never">
+			<file  src="mac/grid-session/Info.plist" targetdir="$INSTALL_PATH/Grid-Session.app/Contents">
+				<os name="Mac OS X"/>
+			</file>
+			<file  src="mac/grid-session/icon.icns" targetdir="$INSTALL_PATH/Grid-Session.app/Contents/Resources">
+				<os name="Mac OS X"/>
+			</file>
+			<file  src="mac/grid-session/grid-session-wrapper.sh" targetdir="$INSTALL_PATH/Grid-Session.app/Contents/MacOS">
+				<os name="Mac OS X"/>
+			</file>
+			<executable  targetfile="$INSTALL_PATH/Grid-Session.app/Contents/MacOS/grid-session-wrapper.sh" keep="true" stage="never">
+				<os name="Mac OS X"/>
 			</executable>			
-			<file os="macosx" src="mac/grid-session/grid-session" targetdir="/usr/bin"></file>
-			<executable os="macosx" targetfile="/usr/bin/grid-session" keep="true" stage="never">
+			<file  src="mac/grid-session/grid-session" targetdir="/usr/bin">
+				<os name="Mac OS X"/>
+			</file>
+			<executable  targetfile="/usr/bin/grid-session" keep="true" stage="never">
+				<os name="Mac OS X"/>
 			</executable>			
 			
 			
