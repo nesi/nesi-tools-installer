@@ -152,9 +152,16 @@
 			<file os="macosx" src="getdown.txt" targetdir="/Library/Frameworks/NeSI/resources"></file>
 			<file os="macosx" src="grisu.png" targetdir="/Library/Frameworks/NeSI/resources"></file>
 
+
+			<file os="macosx" src="mac/grisu-template/Info.plist" targetdir="$INSTALL_PATH/Grisu Template.app/Contents"></file>
+			<file os="macosx" src="mac/grisu-template/icon.icns" targetdir="$INSTALL_PATH/Grisu Template.app/Contents/Resources"></file>
+			<file os="macosx" src="mac/grisu-template/grisu-template" targetdir="/usr/bin"></file>
+			<executable os="macosx" targetfile="/usr/bin/grisu-template" keep="true" stage="never">
+			</executable>			
+
+
 			<file os="macosx" src="mac/gricli/Info.plist" targetdir="$INSTALL_PATH/Gricli.app/Contents"></file>
 			<file os="macosx" src="mac/gricli/icon.icns" targetdir="$INSTALL_PATH/Gricli.app/Contents/Resources"></file>
-			
 			<file os="macosx" src="mac/gricli/gricli-wrapper.sh" targetdir="$INSTALL_PATH/Gricli.app/Contents/MacOS"></file>
 			<executable os="macosx" targetfile="$INSTALL_PATH/Gricli.app/Contents/MacOS/gricli-wrapper.sh" keep="true" stage="never">
 			</executable>			
@@ -164,8 +171,6 @@
 
 			<file os="macosx" src="mac/grid-session/Info.plist" targetdir="$INSTALL_PATH/Grid-Session.app/Contents"></file>
 			<file os="macosx" src="mac/grid-session/icon.icns" targetdir="$INSTALL_PATH/Grid-Session.app/Contents/Resources"></file>
-
-
 			<file os="macosx" src="mac/grid-session/grid-session-wrapper.sh" targetdir="$INSTALL_PATH/Grid-Session.app/Contents/MacOS"></file>
 			<executable os="macosx" targetfile="$INSTALL_PATH/Grid-Session.app/Contents/MacOS/grid-session-wrapper.sh" keep="true" stage="never">
 			</executable>			
