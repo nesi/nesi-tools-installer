@@ -84,7 +84,19 @@
 			<file  src="nesi.png" targetdir="$INSTALL_PATH/launch">
 				<os name="Linux"/>
 			</file>
-			<file  src="icon.png" targetdir="$INSTALL_PATH/resources">
+			<file  src="nesi-icon.png" targetdir="$INSTALL_PATH/resources">
+				<os name="Linux"/>
+			</file>
+			<file  src="gricli-icon.png" targetdir="$INSTALL_PATH/resources">
+				<os name="Linux"/>
+			</file>
+			<file  src="grisu-icon.png" targetdir="$INSTALL_PATH/resources">
+				<os name="Linux"/>
+			</file>
+			<file  src="grython-icon.png" targetdir="$INSTALL_PATH/resources">
+				<os name="Linux"/>
+			</file>
+			<file  src="grid-session-icon.png" targetdir="$INSTALL_PATH/resources">
 				<os name="Linux"/>
 			</file>
 			<file  src="uninstall.png" targetdir="$INSTALL_PATH/resources">
@@ -133,10 +145,6 @@
 				<os name="Linux"/>
 			</executable>
 
-			
-			
-			
-			
 			<file  src="linux/uninstall.sh" targetdir="$INSTALL_PATH/launch">
 				<os name="Linux"/>
 			</file>
@@ -196,7 +204,17 @@
 			<file os="windows" src="mobaxterm.ico" targetdir="$INSTALL_PATH/resources">
 				<os family="windows"/>
 			</file>
-			<file os="windows" src="grisu.ico" targetdir="$INSTALL_PATH/resources">
+			<file os="windows" src="grisu-icon.ico" targetdir="$INSTALL_PATH/resources">
+				<os family="windows"/>
+			</file>
+			<file os="windows" src="grid-session-icon.ico" targetdir="$INSTALL_PATH/resources">
+				<os family="windows"/>
+			</file>
+			<file os="windows" src="gricli-icon.ico" targetdir="$INSTALL_PATH/resources">
+				<os family="windows"/>
+			</file>
+
+			<file os="windows" src="nesi-icon.ico" targetdir="$INSTALL_PATH/resources">
 				<os family="windows"/>
 			</file>
 			
@@ -209,11 +227,9 @@
 			<file os="windows" src="windows/uninstall.ico" targetdir="$INSTALL_PATH/resources">
 				<os family="windows"/>
 			</file>
-			
 
-			
-			
-			
+
+
 			<file src="getdown-client.jar" targetdir="/Library/Frameworks/NeSI/launch">
 				<os name="Mac OS X"/>
 			</file>
