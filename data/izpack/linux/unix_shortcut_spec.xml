@@ -24,6 +24,28 @@
      <createForPack name="Grisu Template Client"/>
    </shortcut>
    
+ 
+     <shortcut
+     name="Virtual Screening Client"
+     programGroup="yes"
+     desktop="yes"
+     applications="no"
+     startMenu="no"
+     startup="no"
+     target="$INSTALL_PATH/bin/grisu-virtscreen"
+     commandLine=""
+     description="A GUI to submit and manage jobs to the grid."
+     workingDirectory="$INSTALL_PATH/bin"
+	 iconFile="$INSTALL_PATH/resources/virtscreen-icon.png"
+     iconIndex="0"
+     type="Application"
+     encoding="UTF-8"
+     terminal="false"
+     KdeSubstUID="false"
+     initialState="normal">
+     <createForPack name="Virtual Screening Client"/>
+   </shortcut>
+   
    <shortcut
      name="Grid-Tray"
      programGroup="yes"

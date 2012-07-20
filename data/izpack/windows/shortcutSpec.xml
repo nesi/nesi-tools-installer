@@ -39,6 +39,24 @@
   </shortcut>  
   
   <shortcut
+    name="Virtual Screening Client"
+    target="$INSTALL_PATH\bin\grisu-virtscreen.vbs"
+    commandLine=""
+    workingDirectory="$INSTALL_PATH\bin\"
+    description="This starts an instance of the Virtual Screening Client"
+    iconFile="$INSTALL_PATH\resources\virtscreen-icon.ico"
+    iconIndex="0"
+    initialState="normal"
+    programGroup="yes"
+    desktop="yes"
+    applications="no"
+    startMenu="no"
+    startup="no">
+
+    <createForPack name="Grisu Template Client"/>
+  </shortcut>    
+  
+  <shortcut
     name="Grid-Session Tray monitor"
     target="$INSTALL_PATH\bin\grid-tray.vbs"
     commandLine=""

@@ -102,6 +102,9 @@
 			<file src="grid-session-icon.png" targetdir="$INSTALL_PATH/resources">
 				<os name="Linux" />
 			</file>
+			<file src="virtscreen-icon.png" targetdir="$INSTALL_PATH/resources">
+				<os name="Linux"/>
+			</file>
 			<file src="uninstall.png" targetdir="$INSTALL_PATH/resources">
 				<os name="Linux" />
 			</file>
@@ -166,6 +169,9 @@
 				<os family="windows" />
 			</file>
 			<file os="windows" src="gricli-icon.ico" targetdir="$INSTALL_PATH/resources">
+				<os family="windows" />
+			</file>
+			<file os="windows" src="virtscreen-icon.ico" targetdir="$INSTALL_PATH/resources">
 				<os family="windows" />
 			</file>
 
@@ -437,6 +443,50 @@
 			</executable>
 
 		</pack>
+		
+		<pack name="Virtual Screening Client" required="no" preselected="no">
+			<description>GUI to submit and monitor virtual screening jobs</description>
+
+			<file src="linux/grisu-virtscreen" targetdir="$INSTALL_PATH/bin">
+				<os name="Linux" />
+			</file>
+			<executable targetfile="$INSTALL_PATH/bin/grisu-virtscreen"
+				keep="true" stage="never">
+				<os name="Linux" />
+			</executable>
+
+
+			<file os="windows" src="windows/grisu-virtscreen.bat" targetdir="$INSTALL_PATH/bin">
+				<os family="windows" />
+			</file>
+			<file os="windows" src="windows/grisu-virtscreen.vbs" targetdir="$INSTALL_PATH/bin">
+				<os family="windows" />
+			</file>
+
+			<file src="mac/grisu-virtscreen/Info.plist" targetdir="$INSTALL_PATH/Virtual Screening.app/Contents">
+				<os name="Mac OS X" />
+			</file>
+			<file src="mac/grisu-virtscreen/icon.icns" targetdir="$INSTALL_PATH/Virtual Screening.app/Contents/Resources">
+				<os name="Mac OS X" />
+			</file>
+			<file src="mac/grisu-virtscreen/grisu-virtscreen" targetdir="/usr/bin">
+				<os name="Mac OS X" />
+			</file>
+			<executable targetfile="/usr/bin/grisu-virtscreen" keep="true"
+				stage="never">
+				<os name="Mac OS X" />
+			</executable>
+			<file src="mac/grisu-virtscreen/grisu-virtscreen-wrapper.sh"
+				targetdir="$INSTALL_PATH/Virtual Screening.app/Contents/MacOS">
+				<os name="Mac OS X" />
+			</file>
+			<executable
+				targetfile="$INSTALL_PATH/Virtual Screening.app/Contents/MacOS/grisu-virtscreen-wrapper.sh"
+				keep="true" stage="never">
+				<os name="Mac OS X" />
+			</executable>
+
+		</pack>		
 
 
 	</packs>
