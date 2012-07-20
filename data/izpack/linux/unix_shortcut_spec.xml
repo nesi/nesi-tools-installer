@@ -21,7 +21,7 @@
      terminal="false"
      KdeSubstUID="false"
      initialState="normal">
-     <createForPack name="NeSI tools"/>
+     <createForPack name="Grisu Template Client"/>
    </shortcut>
    
    <shortcut
@@ -42,7 +42,7 @@
      terminal="false"
      KdeSubstUID="false"
      initialState="normal">
-     <createForPack name="NeSI tools"/>
+     <createForPack name="Grid-Tray"/>
    </shortcut>   
    
    <shortcut
@@ -63,7 +63,7 @@
      terminal="true"
      KdeSubstUID="false"
      initialState="normal">
-     <createForPack name="NeSI tools"/>
+     <createForPack name="Gricli"/>
    </shortcut>   
    
    <shortcut
@@ -84,7 +84,7 @@
      terminal="true"
      KdeSubstUID="false"
      initialState="normal">
-     <createForPack name="NeSI tools"/>
+     <createForPack name="Grid-Tray"/>
    </shortcut>      
    
    <shortcut
@@ -105,7 +105,7 @@
      terminal="true"
      KdeSubstUID="false"
      initialState="normal">
-     <createForPack name="NeSI tools"/>
+     <createForPack name="Grython"/>
    </shortcut>     
    
    <shortcut
@@ -126,7 +126,7 @@
      terminal="false"
      KdeSubstUID="false"
      initialState="normal">
-     <createForPack name="NeSI tools"/>
+     <createForPack name="Core libraries"/>
    </shortcut>      
 
   
@@ -148,7 +148,7 @@
      terminal="false"
      KdeSubstUID="false"
      initialState="normal">
-     <createForPack name="NeSI tools"/>
+     <createForPack name="Core libraries"/>
    </shortcut>
   
   

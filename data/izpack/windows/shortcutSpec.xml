@@ -17,7 +17,7 @@
     startMenu="no"
     startup="no">
 
-    <createForPack name="NeSI tools"/>
+    <createForPack name="MobaXTerm"/>
   </shortcut>
   
   <shortcut
@@ -35,7 +35,7 @@
     startMenu="no"
     startup="no">
 
-    <createForPack name="NeSI tools"/>
+    <createForPack name="Grisu Template Client"/>
   </shortcut>  
   
   <shortcut
@@ -53,7 +53,7 @@
     startMenu="no"
     startup="no">
 
-    <createForPack name="NeSI tools"/>
+    <createForPack name="Grid-Tray"/>
   </shortcut>    
   
   <shortcut
@@ -71,7 +71,7 @@
     startMenu="no"
     startup="no">
 
-    <createForPack name="NeSI tools"/>
+    <createForPack name="Gricli"/>
   </shortcut>    
   
   <shortcut
@@ -89,7 +89,7 @@
     startMenu="no"
     startup="no">
 
-    <createForPack name="NeSI tools"/>
+    <createForPack name="Core libraries"/>
   </shortcut>      
   
   
@@ -107,7 +107,7 @@
      iconFile="$INSTALL_PATH\resources\uninstall.ico"
      iconIndex="0"
      description="NeSI tools uninstaller">
-     <createForPack name="NeSI tools" />
+     <createForPack name="Core libraries" />
    </shortcut>  
   
   
