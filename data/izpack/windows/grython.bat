@@ -56,5 +56,5 @@ if NOT EXIST "!JAVA_EXE!" (
 
 	REM @echo Using java: "!JAVA_EXE!"
 	REM "!JAVA_EXE!" -cp "%dir%\grid-client-core.jar;%dir%\grid-client-dependencies.jar" grisu.gricli.Gricli "%*"
-	"!JAVA_EXE!" -cp "%dir%\grid-client-core.jar;%dir%\grid-client-dependencies.jar" grisu.gricli.Gricli -b bestgrid
+	"!JAVA_EXE!" -cp "%dir%\grid-client-core.jar;%dir%\grid-client-dependencies.jar" grisu.Grython -b bestgrid
 )

@@ -171,6 +171,9 @@
 			<file os="windows" src="gricli-icon.ico" targetdir="$INSTALL_PATH/resources">
 				<os family="windows" />
 			</file>
+			<file os="windows" src="grython-icon.ico" targetdir="$INSTALL_PATH/resources">
+				<os family="windows" />
+			</file>
 			<file os="windows" src="virtscreen-icon.ico" targetdir="$INSTALL_PATH/resources">
 				<os family="windows" />
 			</file>
@@ -306,9 +309,11 @@
 				stage="never">
 				<os name="Linux" />
 			</executable>
+			
 			<file os="windows" src="windows/griclish.bat" targetdir="$INSTALL_PATH/bin">
 				<os family="windows" />
 			</file>
+	
 
 			<file src="mac/gricli/Info.plist" targetdir="$INSTALL_PATH/Gricli.app/Contents">
 				<os name="Mac OS X" />
@@ -419,6 +424,10 @@
 				stage="never">
 				<os name="Linux" />
 			</executable>
+			
+			<file os="windows" src="windows/grython.bat" targetdir="$INSTALL_PATH/bin">
+				<os family="windows" />
+			</file>			
 
 			<file src="mac/grython/Info.plist" targetdir="$INSTALL_PATH/Grython.app/Contents">
 				<os name="Mac OS X" />

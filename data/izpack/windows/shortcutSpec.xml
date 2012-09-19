@@ -93,6 +93,24 @@
   </shortcut>    
   
   <shortcut
+    name="Grython"
+    target="$INSTALL_PATH\bin\grython.bat"
+    commandLine=""
+    workingDirectory="$INSTALL_PATH\bin\"
+    description="This starts an instance of the Grython shell"
+    iconFile="$INSTALL_PATH\resources\grython-icon.ico"
+    iconIndex="0"
+    initialState="normal"
+    programGroup="yes"
+    desktop="yes"
+    applications="no"
+    startMenu="no"
+    startup="no">
+
+    <createForPack name="Grython"/>
+  </shortcut>      
+  
+  <shortcut
     name="NeSI Setup"
     target="$INSTALL_PATH\bin\grid-settings.vbs"
     commandLine=""

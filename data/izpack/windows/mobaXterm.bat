@@ -53,7 +53,18 @@ if NOT EXIST "%dir%\MobaXterm.ini.auto" (
 		WSCRIPT.EXE %TMP%\usermessage.vbs
 		DEL %TMP%\usermessage.vbs
 	) else (
-		"!JAVA_EXE!" -cp "%grisu_dir%\grid-client-core.jar;%grisu_dir%\grid-client-dependencies.jar" "grisu.frontend.view.swing.utils.ssh.SshKeyCopyFrame" "..\resources\MobaXterm.ini" "%dir%"
+	
+		set X509_USER_PROXY=%USERPROFILE%\.grid\grid.proxy
+		@echo Checking for updates. This might take a while...
+		"!JAVA_EXE!" -jar "..\resources\getdown-client.jar" "%grisu_dir%" update
+		
+		if EXIST "%grisu_dir%\java_vm\bin\java.exe" (
+
+			set JAVA_EXE=%grisu_dir%\java_vm\bin\java.exe
+
+		)
+	
+		"!JAVA_EXE!" -cp "%grisu_dir%\grid-client-core.jar;%grisu_dir%\grid-client-dependencies.jar" "grisu.frontend.view.swing.utils.ssh.SshKeyCopyFrame" "..\resources\MobaXterm.ini" "%dir%" "bestgrid"
 	)
 
 )

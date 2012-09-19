@@ -37,7 +37,7 @@
 	<properties>
 		<staging.dir>${project.build.directory}/staging</staging.dir>
 		<izpack.standalone.compiler.version>4.3.1</izpack.standalone.compiler.version>
-		<deploy.url>http://code.ceres.auckland.ac.nz/downloads/nesi</deploy.url>
+		<deploy.url>http://code.ceres.auckland.ac.nz/downloads/dev</deploy.url>
 	</properties>
 
 	<build>
