@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>nz.org.nesi</groupId>
 		<artifactId>nesi</artifactId>
-		<version>0.17</version>
+		<version>0.19</version>
 	</parent>
 	<groupId>nz.org.nesi</groupId>
 	<artifactId>nesi-tools-installer</artifactId>
@@ -37,6 +37,7 @@
 	<properties>
 		<staging.dir>${project.build.directory}/staging</staging.dir>
 		<izpack.standalone.compiler.version>4.3.1</izpack.standalone.compiler.version>
+		<deploy.url>http://code.ceres.auckland.ac.nz/downloads/nesi</deploy.url>
 	</properties>
 
 	<build>
@@ -179,7 +180,8 @@
 							<goal>wget</goal>
 						</goals>
 						<configuration>
-							<url>http://code.ceres.auckland.ac.nz/snapshot-downloads/installers/grid-client-core.jar</url>
+							<skipCache>true</skipCache>
+							<url>${deploy.url}/grid-client-core.jar</url>
 							<unpack>false</unpack>
 							<outputDirectory>${staging.dir}</outputDirectory>
 						</configuration>
@@ -191,7 +193,8 @@
 							<goal>wget</goal>
 						</goals>
 						<configuration>
-							<url>http://code.ceres.auckland.ac.nz/snapshot-downloads/installers/grid-client-dependencies.jar</url>
+							<skipCache>true</skipCache>
+							<url>${deploy.url}/grid-client-dependencies.jar</url>
 							<unpack>false</unpack>
 							<outputDirectory>${staging.dir}</outputDirectory>
 						</configuration>
@@ -203,7 +206,8 @@
 							<goal>wget</goal>
 						</goals>
 						<configuration>
-							<url>http://code.ceres.auckland.ac.nz/snapshot-downloads/installers/getdown.txt</url>
+							<skipCache>true</skipCache>
+							<url>${deploy.url}/getdown.txt</url>
 							<unpack>false</unpack>
 							<outputDirectory>${staging.dir}</outputDirectory>
 						</configuration>

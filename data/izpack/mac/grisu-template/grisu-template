@@ -32,5 +32,5 @@ fi
 
 
 export X509_USER_PROXY="$HOME/.grid/grid.proxy"
-java -jar "$DIR/launch/getdown-client.jar" "$APPDIR"
+java -jar "$DIR/launch/getdown-client.jar" "$APPDIR" template
 
