@@ -173,32 +173,32 @@
 				<artifactId>maven-download-plugin</artifactId>
 				<version>1.0.0</version>
 				<executions>
-					<execution>
-						<id>download-client</id>
-						<phase>validate</phase>
-						<goals>
-							<goal>wget</goal>
-						</goals>
-						<configuration>
-							<skipCache>true</skipCache>
-							<url>${deploy.url}/grid-client-core.jar</url>
-							<unpack>false</unpack>
-							<outputDirectory>${staging.dir}</outputDirectory>
-						</configuration>
-					</execution>		
-					<execution>
-						<id>download-client-dependencies</id>
-						<phase>validate</phase>
-						<goals>
-							<goal>wget</goal>
-						</goals>
-						<configuration>
-							<skipCache>true</skipCache>
-							<url>${deploy.url}/grid-client-dependencies.jar</url>
-							<unpack>false</unpack>
-							<outputDirectory>${staging.dir}</outputDirectory>
-						</configuration>
-					</execution>							
+<!-- 					<execution> -->
+<!-- 						<id>download-client</id> -->
+<!-- 						<phase>validate</phase> -->
+<!-- 						<goals> -->
+<!-- 							<goal>wget</goal> -->
+<!-- 						</goals> -->
+<!-- 						<configuration> -->
+<!-- 							<skipCache>true</skipCache> -->
+<!-- 							<url>${deploy.url}/grid-client-core.jar</url> -->
+<!-- 							<unpack>false</unpack> -->
+<!-- 							<outputDirectory>${staging.dir}</outputDirectory> -->
+<!-- 						</configuration> -->
+<!-- 					</execution>		 -->
+<!-- 					<execution> -->
+<!-- 						<id>download-client-dependencies</id> -->
+<!-- 						<phase>validate</phase> -->
+<!-- 						<goals> -->
+<!-- 							<goal>wget</goal> -->
+<!-- 						</goals> -->
+<!-- 						<configuration> -->
+<!-- 							<skipCache>true</skipCache> -->
+<!-- 							<url>${deploy.url}/grid-client-dependencies.jar</url> -->
+<!-- 							<unpack>false</unpack> -->
+<!-- 							<outputDirectory>${staging.dir}</outputDirectory> -->
+<!-- 						</configuration> -->
+<!-- 					</execution>							 -->
 					<execution>
 						<id>download-getdown.txt</id>
 						<phase>validate</phase>

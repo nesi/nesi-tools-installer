@@ -72,12 +72,12 @@
 		<pack name="Core libraries" required="yes" preselected="yes">
 			<description>Core applications and libraries</description>
 
-			<file src="grid-client-core.jar" targetdir="$INSTALL_PATH/launch">
-				<os name="Linux" />
-			</file>
-			<file src="grid-client-dependencies.jar" targetdir="$INSTALL_PATH/launch">
-				<os name="Linux" />
-			</file>
+<!-- 			<file src="grid-client-core.jar" targetdir="$INSTALL_PATH/launch"> -->
+<!-- 				<os name="Linux" /> -->
+<!-- 			</file> -->
+<!-- 			<file src="grid-client-dependencies.jar" targetdir="$INSTALL_PATH/launch"> -->
+<!-- 				<os name="Linux" /> -->
+<!-- 			</file> -->
 			<file src="getdown.txt" targetdir="$INSTALL_PATH/launch">
 				<os name="Linux" />
 			</file>
@@ -144,12 +144,12 @@
 				<os family="windows" />
 			</file>
 
-			<file os="windows" src="grid-client-core.jar" targetdir="$INSTALL_PATH/resources">
-				<os family="windows" />
-			</file>
-			<file os="windows" src="grid-client-dependencies.jar" targetdir="$INSTALL_PATH/resources">
-				<os family="windows" />
-			</file>
+<!-- 			<file os="windows" src="grid-client-core.jar" targetdir="$INSTALL_PATH/resources"> -->
+<!-- 				<os family="windows" /> -->
+<!-- 			</file> -->
+<!-- 			<file os="windows" src="grid-client-dependencies.jar" targetdir="$INSTALL_PATH/resources"> -->
+<!-- 				<os family="windows" /> -->
+<!-- 			</file> -->
 			<file os="windows" src="getdown-client.jar" targetdir="$INSTALL_PATH/resources">
 				<os family="windows" />
 			</file>
@@ -197,12 +197,12 @@
 			<file src="getdown-client.jar" targetdir="/Library/Frameworks/NeSI/launch">
 				<os name="Mac OS X" />
 			</file>
-			<file src="grid-client-core.jar" targetdir="/Library/Frameworks/NeSI/launch">
-				<os name="Mac OS X" />
-			</file>
-			<file src="grid-client-dependencies.jar" targetdir="/Library/Frameworks/NeSI/launch">
-				<os name="Mac OS X" />
-			</file>
+<!-- 			<file src="grid-client-core.jar" targetdir="/Library/Frameworks/NeSI/launch"> -->
+<!-- 				<os name="Mac OS X" /> -->
+<!-- 			</file> -->
+<!-- 			<file src="grid-client-dependencies.jar" targetdir="/Library/Frameworks/NeSI/launch"> -->
+<!-- 				<os name="Mac OS X" /> -->
+<!-- 			</file> -->
 			<file src="getdown.txt" targetdir="/Library/Frameworks/NeSI/resources">
 				<os name="Mac OS X" />
 			</file>
@@ -249,9 +249,9 @@
 			<file os="windows" src="MobaXterm.ini" targetdir="$INSTALL_PATH/resources">
 				<os family="windows" />
 			</file>
-			<file os="windows" src="mobaxterm.exe" targetdir="$INSTALL_PATH/bin">
-				<os family="windows" />
-			</file>
+<!-- 			<file os="windows" src="mobaxterm.exe" targetdir="$INSTALL_PATH/bin"> -->
+<!-- 				<os family="windows" /> -->
+<!-- 			</file> -->
 
 		</pack>
 
