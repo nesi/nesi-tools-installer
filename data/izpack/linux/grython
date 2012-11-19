@@ -13,4 +13,9 @@ export JAVA_OPTS="-Djava.awt.headless=true"
 export X509_USER_PROXY=~/.grid/grid.proxy
 java ${JAVA_OPTS} -cp "$DIR/../launch/grid-client-core.jar:$DIR/../launch/grid-client-dependencies.jar" grisu.Grython $@
 
-
+if [ -f "$DIR/../launch/java_vm/bin/java" ]
+then
+   "$DIR/../launch/java_vm/bin/java" ${JAVA_OPTS} -cp "$DIR/../launch/grid-client-core.jar:$DIR/../launch/grid-client-dependencies.jar" grisu.Grython $@
+else
+   java ${JAVA_OPTS} -cp "$DIR/../launch/grid-client-core.jar:$DIR/../launch/grid-client-dependencies.jar" grisu.Grython $@
+fi

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <installation version="1.0">
 	<info>
-		<appname>NeSI</appname>
-		<appversion>0.1</appversion>
+		<appname>${project.name}</appname>
+		<appversion>${project.version}</appversion>
 		<url>http://nesi.org.nz</url>
 		<authors>
 			<author name="Markus Binsteiner" email="m.binsteiner@auckland.ac.nz" />
@@ -39,6 +39,9 @@
 
 		<res id="shortcutSpec.xml" src="windows/shortcutSpec.xml" />
 		<res id="Unix_shortcutSpec.xml" src="linux/unix_shortcut_spec.xml" />
+		
+<!-- 		<res id="RegistrySpec.xml" src="windows/RegistrySpec.xml"/> -->
+		
 	</resources>
 
 	<native type="izpack" name="ShellLink.dll">
@@ -47,6 +50,16 @@
 	<native type="izpack" name="ShellLink_x64.dll">
 		<os family="windows" />
 	</native>
+	<native type="3rdparty" name="COIOSHelper.dll" stage="both">
+   	 	<os family="windows"/>
+	</native>
+
+<!-- 	<listeners> -->
+<!--     	<listener installer="RegistryInstallerListener" -->
+<!--    		     uninstaller="RegistryUninstallerListener" > -->
+<!--  	       <os family="windows"/> -->
+<!--  	   </listener> -->
+<!-- 	</listeners> -->
 
 
 
@@ -60,24 +73,57 @@
 	<panels>
 		<!-- <panel classname="CheckedHelloPanel" id="welcome"/> -->
 		<!-- <panel classname="HTMLHelloPanel" /> -->
-		<panel classname="TargetPanel" id="install_dir" />
+		<panel classname="TargetPanel" id="install_dir">
+			<os family="windows" />
+			<actions>
+			<action stage="preactivate"
+			classname="com.opentext.installer.actions.RegistryWriterAction">
+			<param>
+			<key>ConfigurationFile</key>
+			<value>RegistryWriterConfiguration.xml</value>
+			</param>
+			</action>
+			<!-- <action stage="preactivate" classname="nz.org.nesi.test.TestAction"> -->
+			<!-- </action> -->
+			</actions>
+		</panel>
 		<panel classname="PacksPanel" id="sdk_pack_select" />
 		<panel classname="InstallPanel" id="install" />
 		<panel classname="ShortcutPanel" id="shortcutpanel" />
-		<panel classname="SimpleFinishPanel" id="finish" />
+
+		<panel classname="SimpleFinishPanel" id="finish">
+<!-- 			<actions> -->
+<!-- 				<action stage="preactivate" -->
+<!-- 					classname="nz.org.nesi.installer.version.WriteVersionAction"> -->
+<!-- 					<param> -->
+<!-- 						<key>InstallerVersion</key> -->
+<!-- 						<value>${project.version}</value> -->
+<!-- 					</param> -->
+<!-- 					<param> -->
+<!-- 						<key>InstallPath</key> -->
+<!-- 						<value>${INSTALL_PATH}</value> -->
+<!-- 					</param> -->
+<!-- 				</action> -->
+<!-- 			</actions> -->
+		</panel>
 	</panels>
+
+	<jar src="../nesi-tools-installer-custom.jar" stage="both" />
+	<jar src="../custom/izpack-standalone-compiler-4.3.5.jar" stage="both"/>
 
 	<packs>
 
 		<pack name="Core libraries" required="yes" preselected="yes">
 			<description>Core applications and libraries</description>
+			
+			<file src="version.txt" targetdir="$INSTALL_PATH/resources"/>
 
-<!-- 			<file src="grid-client-core.jar" targetdir="$INSTALL_PATH/launch"> -->
-<!-- 				<os name="Linux" /> -->
-<!-- 			</file> -->
-<!-- 			<file src="grid-client-dependencies.jar" targetdir="$INSTALL_PATH/launch"> -->
-<!-- 				<os name="Linux" /> -->
-<!-- 			</file> -->
+			<!-- <file src="grid-client-core.jar" targetdir="$INSTALL_PATH/launch"> -->
+			<!-- <os name="Linux" /> -->
+			<!-- </file> -->
+			<!-- <file src="grid-client-dependencies.jar" targetdir="$INSTALL_PATH/launch"> -->
+			<!-- <os name="Linux" /> -->
+			<!-- </file> -->
 			<file src="getdown.txt" targetdir="$INSTALL_PATH/launch">
 				<os name="Linux" />
 			</file>
@@ -103,7 +149,7 @@
 				<os name="Linux" />
 			</file>
 			<file src="virtscreen-icon.png" targetdir="$INSTALL_PATH/resources">
-				<os name="Linux"/>
+				<os name="Linux" />
 			</file>
 			<file src="uninstall.png" targetdir="$INSTALL_PATH/resources">
 				<os name="Linux" />
@@ -144,12 +190,12 @@
 				<os family="windows" />
 			</file>
 
-<!-- 			<file os="windows" src="grid-client-core.jar" targetdir="$INSTALL_PATH/resources"> -->
-<!-- 				<os family="windows" /> -->
-<!-- 			</file> -->
-<!-- 			<file os="windows" src="grid-client-dependencies.jar" targetdir="$INSTALL_PATH/resources"> -->
-<!-- 				<os family="windows" /> -->
-<!-- 			</file> -->
+			<!-- <file os="windows" src="grid-client-core.jar" targetdir="$INSTALL_PATH/resources"> -->
+			<!-- <os family="windows" /> -->
+			<!-- </file> -->
+			<!-- <file os="windows" src="grid-client-dependencies.jar" targetdir="$INSTALL_PATH/resources"> -->
+			<!-- <os family="windows" /> -->
+			<!-- </file> -->
 			<file os="windows" src="getdown-client.jar" targetdir="$INSTALL_PATH/resources">
 				<os family="windows" />
 			</file>
@@ -197,12 +243,12 @@
 			<file src="getdown-client.jar" targetdir="/Library/Frameworks/NeSI/launch">
 				<os name="Mac OS X" />
 			</file>
-<!-- 			<file src="grid-client-core.jar" targetdir="/Library/Frameworks/NeSI/launch"> -->
-<!-- 				<os name="Mac OS X" /> -->
-<!-- 			</file> -->
-<!-- 			<file src="grid-client-dependencies.jar" targetdir="/Library/Frameworks/NeSI/launch"> -->
-<!-- 				<os name="Mac OS X" /> -->
-<!-- 			</file> -->
+			<!-- <file src="grid-client-core.jar" targetdir="/Library/Frameworks/NeSI/launch"> -->
+			<!-- <os name="Mac OS X" /> -->
+			<!-- </file> -->
+			<!-- <file src="grid-client-dependencies.jar" targetdir="/Library/Frameworks/NeSI/launch"> -->
+			<!-- <os name="Mac OS X" /> -->
+			<!-- </file> -->
 			<file src="getdown.txt" targetdir="/Library/Frameworks/NeSI/resources">
 				<os name="Mac OS X" />
 			</file>
@@ -249,9 +295,9 @@
 			<file os="windows" src="MobaXterm.ini" targetdir="$INSTALL_PATH/resources">
 				<os family="windows" />
 			</file>
-<!-- 			<file os="windows" src="mobaxterm.exe" targetdir="$INSTALL_PATH/bin"> -->
-<!-- 				<os family="windows" /> -->
-<!-- 			</file> -->
+			<!-- <file os="windows" src="mobaxterm.exe" targetdir="$INSTALL_PATH/bin"> -->
+			<!-- <os family="windows" /> -->
+			<!-- </file> -->
 
 		</pack>
 
@@ -309,11 +355,11 @@
 				stage="never">
 				<os name="Linux" />
 			</executable>
-			
+
 			<file os="windows" src="windows/griclish.bat" targetdir="$INSTALL_PATH/bin">
 				<os family="windows" />
 			</file>
-	
+
 
 			<file src="mac/gricli/Info.plist" targetdir="$INSTALL_PATH/Gricli.app/Contents">
 				<os name="Mac OS X" />
@@ -340,7 +386,9 @@
 		</pack>
 
 		<pack name="Grid-Tray" required="no" preselected="no">
-			<description>A tray application that lets you manage your grid session state</description>
+			<description>A tray application that lets you manage your grid
+				session state
+			</description>
 
 			<file src="linux/grid-session" targetdir="$INSTALL_PATH/bin">
 				<os name="Linux" />
@@ -424,10 +472,10 @@
 				stage="never">
 				<os name="Linux" />
 			</executable>
-			
+
 			<file os="windows" src="windows/grython.bat" targetdir="$INSTALL_PATH/bin">
 				<os family="windows" />
-			</file>			
+			</file>
 
 			<file src="mac/grython/Info.plist" targetdir="$INSTALL_PATH/Grython.app/Contents">
 				<os name="Mac OS X" />
@@ -452,9 +500,10 @@
 			</executable>
 
 		</pack>
-		
+
 		<pack name="Virtual Screening Client" required="no" preselected="no">
-			<description>GUI to submit and monitor virtual screening jobs</description>
+			<description>GUI to submit and monitor virtual screening jobs
+			</description>
 
 			<file src="linux/grisu-virtscreen" targetdir="$INSTALL_PATH/bin">
 				<os name="Linux" />
@@ -475,7 +524,8 @@
 			<file src="mac/grisu-virtscreen/Info.plist" targetdir="$INSTALL_PATH/Virtual Screening.app/Contents">
 				<os name="Mac OS X" />
 			</file>
-			<file src="mac/grisu-virtscreen/icon.icns" targetdir="$INSTALL_PATH/Virtual Screening.app/Contents/Resources">
+			<file src="mac/grisu-virtscreen/icon.icns"
+				targetdir="$INSTALL_PATH/Virtual Screening.app/Contents/Resources">
 				<os name="Mac OS X" />
 			</file>
 			<file src="mac/grisu-virtscreen/grisu-virtscreen" targetdir="/usr/bin">
@@ -495,7 +545,7 @@
 				<os name="Mac OS X" />
 			</executable>
 
-		</pack>		
+		</pack>
 
 
 	</packs>

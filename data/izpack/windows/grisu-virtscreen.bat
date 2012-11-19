@@ -1,25 +1,31 @@
 @ECHO OFF
 
 set dir=%APPDATA%\NeSI\Grisu
+set installdir=%~dp0
+
 
 if NOT EXIST "%dir%" (
 	MD "%dir%"
 )
-if NOT EXIST "%dir%\grid-client-core.jar" (
-	COPY ..\resources\grid-client-core.jar "%dir%\grid-client-core.jar"
+
+
+if NOT EXIST "%USERPROFILE%\.grid" (
+	MD "%USERPROFILE%\.grid"
+)
+if NOT EXIST "%USERPROFILE%\.grisu" (
+	MD "%USERPROFILE%\.grisu"
 )
 
-if NOT EXIST "%dir%\grid-client-dependencies.jar" (
-	COPY ..\resources\grid-client-dependencies.jar "%dir%\grid-client-dependencies.jar"
+if NOT EXIST "%dir%\version.txt" (
+	COPY "%installdir%\..\resources\version.txt" "%dir%\version.txt"
 )
-
 
 if NOT EXIST "%dir%\getdown.txt" (
-	COPY ..\resources\getdown.txt "%dir%\getdown.txt"
+	COPY "%installdir%\..\resources\getdown.txt" "%dir%\getdown.txt"
 )
 
 if NOT EXIST "%dir%\nesi.png" (
-	COPY ..\resources\nesi.png "%dir%\nesi.png"
+	COPY "%installdir%\..\resources\nesi.png" "%dir%\nesi.png"
 )
 
 
@@ -46,6 +52,6 @@ if NOT EXIST "!JAVA_EXE!" (
 
 	@echo Using proxy path: "!X509_USER_PROXY!"
 
-    "!JAVA_EXE!" -jar "..\resources\getdown-client.jar" "%dir%" virtscreen
+    "!JAVA_EXE!" -jar "%installdir%\..\resources\getdown-client.jar" "%dir%" virtscreen
 
 )

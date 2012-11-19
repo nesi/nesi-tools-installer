@@ -2,6 +2,8 @@
 
 set dir=%APPDATA%\NeSI\MobaXTerm
 set grisu_dir=%APPDATA%\NeSI\Grisu
+set installdir=%~dp0
+
 
 if NOT EXIST "%dir%" (
 	MD "%dir%"
@@ -10,7 +12,7 @@ if NOT EXIST "%dir%" (
 echo DIR %dir%
 
 if NOT EXIST "%dir%\mobaxterm.exe" (
-	COPY ..\bin\mobaxterm.exe "%dir%\mobaxterm.exe"
+	COPY "%installdir%\..\bin\mobaxterm.exe" "%dir%\mobaxterm.exe"
 )
 
 if NOT EXIST "%dir%\MobaXterm.ini.auto" (
@@ -19,21 +21,16 @@ if NOT EXIST "%dir%\MobaXterm.ini.auto" (
 		MD "%grisu_dir%"
 	)
 
-	if NOT EXIST "%grisu_dir%\grid-client-core.jar" (
-		COPY ..\resources\grid-client-core.jar "%grisu_dir%\grid-client-core.jar"
+	if NOT EXIST "%grisu_dir%\version.txt" (
+		COPY "%installdir%\..\resources\version.txt" "%grisu_dir%\version.txt"
 	)
-
-	if NOT EXIST "%grisu_dir%\grid-client-dependencies.jar" (
-		COPY ..\resources\grid-client-dependencies.jar "%grisu_dir%\grid-client-dependencies.jar"
-	)
-
 
 	if NOT EXIST "%grisu_dir%\getdown.txt" (
-		COPY ..\resources\getdown.txt "%grisu_dir%\getdown.txt"
+		COPY "%installdir%\..\resources\getdown.txt" "%grisu_dir%\getdown.txt"
 	)
 
 	if NOT EXIST "%grisu_dir%\nesi.png" (
-		COPY ..\resources\nesi.png "%grisu_dir%\nesi.png"
+		COPY "%installdir%\..\resources\nesi.png" "%grisu_dir%\nesi.png"
 	)
 	
 
@@ -56,7 +53,7 @@ if NOT EXIST "%dir%\MobaXterm.ini.auto" (
 	
 		set X509_USER_PROXY=%USERPROFILE%\.grid\grid.proxy
 		@echo Checking for updates. This might take a while...
-		"!JAVA_EXE!" -jar "..\resources\getdown-client.jar" "%grisu_dir%" update
+		"!JAVA_EXE!" -jar "%installdir%\..\resources\getdown-client.jar" "%grisu_dir%" update
 		
 		if EXIST "%grisu_dir%\java_vm\bin\java.exe" (
 
