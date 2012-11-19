@@ -71,8 +71,10 @@
 
 
 	<panels>
-		<!-- <panel classname="CheckedHelloPanel" id="welcome"/> -->
-		<!-- <panel classname="HTMLHelloPanel" /> -->
+
+		<panel classname="PacksPanel" id="sdk_pack_select" />
+		<panel classname="InstallPanel" id="install" />
+		<panel classname="ShortcutPanel" id="shortcutpanel" />
 		<panel classname="TargetPanel" id="install_dir">
 			<os family="windows" />
 			<actions>
@@ -87,9 +89,6 @@
 			<!-- </action> -->
 			</actions>
 		</panel>
-		<panel classname="PacksPanel" id="sdk_pack_select" />
-		<panel classname="InstallPanel" id="install" />
-		<panel classname="ShortcutPanel" id="shortcutpanel" />
 
 		<panel classname="SimpleFinishPanel" id="finish">
 <!-- 			<actions> -->
