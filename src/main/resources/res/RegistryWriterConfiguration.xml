@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Actions>
+<Action>
+    <Root value="HKEY_LOCAL_MACHINE" />
+    <Key value="SYSTEM\CurrentControlSet\Control\Session Manager\Environment" />
+    <Name value="Path" />
+    <Value value=";$INSTALL_PATH\bin" />
+    <Mode value="append" />
+    <CreateIfNew value="true" />
+</Action>
+<Action>
+    <Root value="HKEY_CURRENT_USER" />
+    <Key value="Environment" />
+    <Name value="MARKUS" />
+    <Value value=";$INSTALL_PATH\bin" />
+    <Mode value="prepend" />
+    <CreateIfNew value="true" />
+</Action>
+</Actions>
