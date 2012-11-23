@@ -72,21 +72,19 @@
 
 	<panels>
 
+		<panel classname="TargetPanel" id="install_dir"/>
 		<panel classname="PacksPanel" id="sdk_pack_select" />
 		<panel classname="InstallPanel" id="install" />
-		<panel classname="ShortcutPanel" id="shortcutpanel" />
-		<panel classname="TargetPanel" id="install_dir">
-			<os family="windows" />
+		<panel classname="ShortcutPanel" id="shortcutpanel" >
 			<actions>
 			<action stage="preactivate"
 			classname="com.opentext.installer.actions.RegistryWriterAction">
+			<os family="windows" />
 			<param>
 			<key>ConfigurationFile</key>
 			<value>RegistryWriterConfiguration.xml</value>
 			</param>
 			</action>
-			<!-- <action stage="preactivate" classname="nz.org.nesi.test.TestAction"> -->
-			<!-- </action> -->
 			</actions>
 		</panel>
 
