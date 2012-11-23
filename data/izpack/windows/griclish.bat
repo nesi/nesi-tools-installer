@@ -60,6 +60,5 @@ if NOT EXIST "!JAVA_EXE!" (
 	cd %HOMEDRIVE%%HOMEPATH%
 
 	@echo Using java: "!JAVA_EXE!"
-	REM "!JAVA_EXE!" -cp "%dir%\grid-client-core.jar;%dir%\grid-client-dependencies.jar" grisu.gricli.Gricli "%*"
-	"!JAVA_EXE!" -cp "%dir%\grid-client-core.jar;%dir%\grid-client-dependencies.jar" grisu.gricli.Gricli "%*"
+	"!JAVA_EXE!" -cp "%dir%\grid-client-core.jar;%dir%\grid-client-dependencies.jar" grisu.gricli.Gricli %*
 )
