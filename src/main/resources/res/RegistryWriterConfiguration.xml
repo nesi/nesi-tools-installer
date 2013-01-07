@@ -8,12 +8,12 @@
     <Mode value="append" />
     <CreateIfNew value="true" />
 </Action>
-<Action>
-    <Root value="HKEY_CURRENT_USER" />
-    <Key value="Environment" />
-    <Name value="MARKUS" />
-    <Value value=";$INSTALL_PATH\bin" />
-    <Mode value="prepend" />
-    <CreateIfNew value="true" />
-</Action>
+<!-- <Action> -->
+<!--     <Root value="HKEY_CURRENT_USER" /> -->
+<!--     <Key value="Environment" /> -->
+<!--     <Name value="MARKUS" /> -->
+<!--     <Value value=";$INSTALL_PATH\bin" /> -->
+<!--     <Mode value="prepend" /> -->
+<!--     <CreateIfNew value="true" /> -->
+<!-- </Action> -->
 </Actions>
